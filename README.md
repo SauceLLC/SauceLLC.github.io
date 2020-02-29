@@ -14,4 +14,4 @@ Installation
 [![firefox add on](/sauce4strava/assets/images/AMO-button_1.png)](https://addons.mozilla.org/addon/sauce)
 
 
-![slideshow](/sauce4strava/images/screenshots/slideshow.gif)
+![slideshow](/sauce4strava/assets/images/screenshots/slideshow.gif)

@@ -1,4 +1,5 @@
-[{
-    "level": "supporter",
-    "id": "23cbae0a26aac3a3a4e1da770898bd4bdcc27225cb09d94a66f91c22fa99333c"
-}]
+{
+    "23cbae0a26aac3a3a4e1da770898bd4bdcc27225cb09d94a66f91c22fa99333c": {
+        "level": "supporter"
+    }
+}

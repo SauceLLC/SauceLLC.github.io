@@ -1,5 +1,3 @@
-Sauce for Strava™
-===========
 ![Sauce](/sauce4strava/images/logo_horiz_320x120.png)
 #### A browser extension for Strava.com
 The Sauce extension supplements athletic websites like https://strava.com with better

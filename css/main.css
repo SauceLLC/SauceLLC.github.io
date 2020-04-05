@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Permanent Marker', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background: #222;
+    color: #f0f0f0;
+    margin: 0;
+}
+
+a:link, a:visited {
+    color: #ff4400e0;
+    text-decoration: none;
+    transition: color 200ms, text-decoration 200ms;
+}
+
+a:hover {
+    color: #ff4400;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+body > header#nav {
+    background: #333;
+    box-shadow: 0 1px 5px 0 #000b;
+}
+
+body > header {
+    position: sticky;
+    top: 0;
+    background: inherit;
+}
+
+body > section {
+    background: inherit;
+}
+
+body > header > nav {
+    display: flex;
+    height: 6em;
+    padding: 1em 2em;
+}
+
+body > header > nav .left {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+body > header > nav .left > * {
+    margin-right: 2em;
+}
+
+body > header > nav .left a {
+    font-size: 1.5em;
+}
+
+img.branding {
+    height: 100%;
+    object-fit: contain;
+}
+
+body > header > nav .right {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+a.store-install {
+    height: 100%;
+    border-radius: 0.4em;
+    overflow: hidden;
+    transition: box-shadow 200ms;
+}
+
+a.store-install:hover {
+    box-shadow: 1px 1px 5px 0 #0009;
+}
+
+a.store-install img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+body > footer {
+    background: #444;
+    color: #ddd;
+    font-size: 0.85em;
+    padding: 2em 1em;
+}
+
+header.split {
+    display: flex;
+}
+
+.split mumbo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 1em 3em 6em;
+    padding: 3em;
+    flex: 1 1 40%;
+}
+
+.split card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    margin: 3em 6em 3em 1em;
+    flex: 1 1 60%;
+}
+
+card img {
+    max-width: 80%;
+    border-radius: 0.4em;
+}
+
+huge {
+    font-size: 3em;
+}
+
+#features mumbo {
+    background-color: #008659;
+}

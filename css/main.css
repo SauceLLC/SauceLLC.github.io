@@ -225,6 +225,16 @@ header.intro#intro {
     box-shadow: 1px 1px 5px 0 #0003;
 }
 
+a.top {
+    position: fixed;
+    z-index: 100;
+    bottom: 1em;
+    right: 1em;
+    text-decoration: none !important;
+    opacity: 0.8;
+    font-size: 1.1em;
+}
+
 @media only screen and (max-width: 768px) {
     body > #nav {
         margin-bottom: 0;
@@ -268,5 +278,9 @@ header.intro#intro {
         padding-left: 0 !important;
         padding-right: 0 !important;
         align-items: center !important;
+    }
+
+    a.top {
+        display: none;
     }
 }

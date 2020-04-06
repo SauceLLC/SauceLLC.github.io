@@ -5,6 +5,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html.fastscroll {
+    scroll-behavior: auto;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -53,7 +57,11 @@ body > section.scrollable {
 body > section {
     background: inherit;
     padding-top: 6em;
-    padding-bottom: 18em;
+    padding-bottom: 6em;
+}
+
+body > section:not(:last-of-type) {
+    padding-bottom: 60vh;
 }
 
 body > section p {
@@ -181,11 +189,8 @@ section card {
 card .visual {
     max-width: 80%;
     max-height: 80vh;
-    min-width: 50em;
-    min-height: 30em;
     border-radius: 0.4em;
     object-fit: contain;
-    box-shadow: 2px 2px 8px 0 #000e;
 }
 
 huge {
@@ -271,8 +276,6 @@ a.top {
     }
 
     card .visual {
-        min-width: 90vw;
-        min-height: 16em;
         max-width: 100%;
     }
 
@@ -284,5 +287,9 @@ a.top {
 
     a.top {
         display: none;
+    }
+
+    card iframe.visual {
+        max-height: 30vh;
     }
 }

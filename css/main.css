@@ -157,6 +157,7 @@ header.intro {
     width: 34em;
     border-radius: 0.4em;
     opacity: 0.98;
+    box-shadow: 1px 1px 5px 0 #0005;
 }
 
 header.intro.left {
@@ -184,6 +185,7 @@ card .visual {
     min-height: 30em;
     border-radius: 0.4em;
     object-fit: contain;
+    box-shadow: 2px 2px 8px 0 #000e;
 }
 
 huge {

@@ -110,20 +110,38 @@ body > #nav > nav .right {
     justify-content: flex-end;
 }
 
-a.store-install {
+a.social {
     height: 100%;
-    border-radius: 0.4em;
-    overflow: hidden;
-    transition: box-shadow 200ms;
+    margin-right: 1em;
+    padding: 1em 0.5em;
+    opacity: 0.8;
+    transition: opacity 200ms;
 }
 
-a.store-install:hover {
+a.social:hover {
+    opacity: 1;
+}
+
+a.social img {
+    max-height: 100%;
+}
+
+a.store-install {
+    margin-left: 0.5em;
+    height: 100%;
+    padding: 0.5em;
+    overflow: hidden;
+}
+
+a.store-install:hover img {
     box-shadow: 1px 1px 5px 0 #0009;
 }
 
 a.store-install img {
     max-height: 100%;
     object-fit: contain;
+    border-radius: 0.4em;
+    transition: box-shadow 200ms;
 }
 
 
@@ -291,5 +309,30 @@ a.top {
 
     card iframe.visual {
         max-height: 30vh;
+    }
+
+    body > #nav > nav .left > * {
+        margin-right: 0.1em;
+    }
+
+    img.branding {
+        height: 1em;
+    }
+
+    a.store-install {
+        padding-top: 0.9em;
+        padding-bottom: 0.9em;
+    }
+
+    a.social {
+        margin-right: 0.2em;
+        padding-top: 1.2em;
+        padding-bottom: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    html {
+        font-size: 13px;
     }
 }

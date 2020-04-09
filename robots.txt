@@ -1,1 +1,2 @@
+Disallow: /patrons.json
 Sitemap: https://saucellc.io/sitemap.xml

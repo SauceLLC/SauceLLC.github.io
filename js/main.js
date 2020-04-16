@@ -31,6 +31,7 @@
                 break;
             }
         }
+    }
 
     addEventListener('DOMContentLoaded', onDOMloaded);
     addEventListener('load', onLoad);

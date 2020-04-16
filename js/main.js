@@ -33,7 +33,7 @@
         }
     }
 
-    addEventListener('DOMContentLoaded', onDOMloaded);
+    addEventListener('DOMContentLoaded', onDOMLoaded);
     addEventListener('load', onLoad);
 })();
 

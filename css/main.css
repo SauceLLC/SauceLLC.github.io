@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: sans-serif;
-    scroll-behavior: smooth;
 }
 
 html.fastscroll {

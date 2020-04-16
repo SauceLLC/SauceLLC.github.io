@@ -1,17 +1,9 @@
 (function() {
-    async function load() {
+    function onDOMLoaded() {
         const isFirefox = navigator.userAgent.indexOf("Firefox") !== -1;
         const installLink = document.querySelector(`a.store-install.${isFirefox ? 'firefox' : 'default'}`);
         installLink.classList.remove('hidden');
 
-        const pages = ['features', 'about', 'patron', 'support'];
-        for (const x of pages) {
-            if (location.pathname.match(new RegExp(`^\\/${x}(\\.html)?(\\?|$|#)`))) {
-                const anchor = document.querySelector(`#${x}`);
-                anchor.scrollIntoView();
-                break;
-            }
-        }
         const anchorLinks = document.querySelectorAll('a.anchor');
         for (const x of anchorLinks) {
             x.addEventListener('click', ev => {
@@ -29,6 +21,18 @@
             });
         }
     }
-    addEventListener('DOMContentLoaded', load);
+
+    function onLoad() {
+        const pages = ['features', 'about', 'patron', 'support'];
+        for (const x of pages) {
+            if (location.pathname.match(new RegExp(`^\\/${x}(\\.html)?(\\?|$|#)`))) {
+                const anchor = document.querySelector(`#${x}`);
+                anchor.scrollIntoView();
+                break;
+            }
+        }
+
+    addEventListener('DOMContentLoaded', onDOMloaded);
+    addEventListener('load', onLoad);
 })();
 

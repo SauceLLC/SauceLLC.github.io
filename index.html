@@ -6,12 +6,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
 
-        <title>Sauce for Strava™</title>
+        <title>Sauce for Strava™ - A browser extension for Strava</title>
 
         <link rel="manifest" href="manifest.json"/>
         <link id="favicon" rel="shortcut icon" href="images/favicon.png"/>
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://saucellc.io",
+                "logo": "https://saucellc.io/images/logo_vert_240x640.png"
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Intro",
+                    "item": "https://saucellc.io/intro"
+                },{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Features",
+                    "item": "https://saucellc.io/features"
+                },{
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "About",
+                    "item": "https://saucellc.io/about"
+                },{
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "patron",
+                    "item": "https://saucellc.io/patron"
+                },{
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Support",
+                    "item": "https://saucellc.io/support"
+                },{
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Privacy Policy",
+                    "item": "https://saucellc.io/sauce4strava/privacy"
+                }]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "Sauce for Strava™",
+                "browserRequirements": "Chrome, Firefox, Edge or Opera",
+                "applicationCategory": "BrowserApplication",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.72",
+                    "ratingCount": "55"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                },
+                "installUrl": "https://chrome.google.com/webstore/detail/sauce-for-strava/eigiefcapdcdmncdghkeahgfmnobigha",
+                "screenshot": "https://saucellc.io/images/promotile.png"
+            }
+        </script>
 
         <script defer type="text/javascript" src="js/main.js"></script>
         <script>
@@ -250,6 +316,15 @@
         </section>
 
         <footer>
+            <row>
+                <column>
+                    Updated: April 17, 2020<br/>
+                    Copyright 2020 Sauce, LLC
+                </column>
+                <column>
+                    <a href="/sauce4strava/pages/privacy">Privacy Policy</a>
+                </column>
+            </row>
         </footer>
 
         <a class="anchor top" href="#top" title="Scroll to top">⬆</a>

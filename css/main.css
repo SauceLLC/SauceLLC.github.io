@@ -330,6 +330,18 @@ a.top {
     }
 }
 
+footer row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer row column {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
 @media only screen and (max-width: 320px) {
     html {
         font-size: 13px;

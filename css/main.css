@@ -143,15 +143,6 @@ a.store-install img {
     transition: box-shadow 200ms;
 }
 
-
-body > footer {
-    background: #444;
-    color: #ddd;
-    font-size: 0.85em;
-    padding: 2em 1em;
-    min-height: 20em;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -259,6 +250,41 @@ a.top {
     font-size: 1.1em;
 }
 
+body > footer {
+    background: #444;
+    color: #ddd;
+    font-size: 0.92em;
+    padding: 2em 1em;
+    min-height: 20em;
+}
+
+body> footer row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+body> footer row column {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+body> footer row column ul {
+    padding-left: 0;
+}
+
+body> footer row column li {
+    padding: 0.1em 0 0.8em;
+    list-style-type: none;
+}
+
+body> footer .install-link img {
+    width: 10rem;
+}
+
+
 @media only screen and (max-width: 768px) {
     body > #nav {
         margin-bottom: 0;
@@ -330,17 +356,6 @@ a.top {
     }
 }
 
-footer row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-footer row column {
-    display: flex;
-    flex-direction: column;
-    opacity: 0.8;
-}
 
 @media only screen and (max-width: 320px) {
     html {

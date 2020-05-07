@@ -9,7 +9,7 @@ Installation
 --------
 #### Official versions:
 [![chrome web store](/sauce4strava/assets/images/ChromeWebStore_Badge_v2_206x58.png)](https://chrome.google.com/webstore/detail/eigiefcapdcdmncdghkeahgfmnobigha)
-[![firefox add on](/sauce4strava/assets/images/AMO-button_1.png)](https://addons.mozilla.org/addon/sauce)
+[![firefox add on](/sauce4strava/assets/images/AMO-button_1.png)](https://addons.mozilla.org/addon/sauce4strava)
 
 
 ![slideshow](/sauce4strava/assets/images/screenshots/slideshow.gif)

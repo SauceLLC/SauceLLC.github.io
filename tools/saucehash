@@ -1,0 +1,3 @@
+#!/bin/sh
+# Simply the way I make hashes for the sauce patrons file.
+exec echo -n "$1" | sha256sum | awk '{print $1}'

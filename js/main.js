@@ -1,7 +1,14 @@
 (function() {
     function onDOMLoaded() {
         const isFirefox = navigator.userAgent.indexOf("Firefox") !== -1;
-        const installLink = document.querySelector(`a.store-install.${isFirefox ? 'firefox' : 'default'}`);
+        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        const browser = isFirefox ? 'firefox' : isSafari ? 'safari' : 'chrome';
+        const installLink = document.querySelector(`a.store-install.${browser}`);
+        if (isSafari) {
+            const links = document.querySelectorAll(`a.safari-download`);
+            fetch('/builds/safari/LATEST.json').then(r => r.json().then(b =>
+                links.forEach(x => x.setAttribute('href', b.url))));
+        }
         installLink.classList.remove('hidden');
 
         const anchorLinks = document.querySelectorAll('a.anchor');

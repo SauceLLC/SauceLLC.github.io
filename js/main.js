@@ -1,13 +1,15 @@
 (function() {
     function onDOMLoaded() {
-        fetch('/builds/safari/LATEST.json').then(r => r.json().then(b =>
-            document.querySelectorAll(`a.safari-download`).forEach(x =>
-                x.setAttribute('href', b.url))));
+        safariP.then(b => document.querySelectorAll(`a.safari-download`).forEach(x =>
+            x.setAttribute('href', b.url)));
         const isFirefox = navigator.userAgent.indexOf("Firefox") !== -1;
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         const browser = isFirefox ? 'firefox' : isSafari ? 'safari' : 'chrome';
         const installLink = document.querySelector(`a.store-install.${browser}`);
         installLink.classList.remove('hidden');
+
+        const supEl = document.querySelector('a.supporter-highlight');
+        supP.then(x => supEl.textContent = x[Math.floor(Math.random() * x.length)]);
 
         const anchorLinks = document.querySelectorAll('a.anchor');
         for (const x of anchorLinks) {
@@ -38,6 +40,8 @@
         }
     }
 
+    const supP = fetch('https://saucellc.io/supporters.json').then(x => x.json());
+    const safariP = fetch('https://saucellc.io/builds/safari/LATEST.json').then(x => x.json());
     addEventListener('DOMContentLoaded', onDOMLoaded);
     addEventListener('load', onLoad);
 })();

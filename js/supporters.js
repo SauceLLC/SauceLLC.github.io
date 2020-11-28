@@ -22,12 +22,18 @@
         const brags = await (await fetch('https://saucellc.io/brags.json')).json();
         const availBrags = Array.from(brags);
         const patrons = document.querySelectorAll(`patron`);
-        let i = 0;
-        for (const x of patrons) {
+        const orders = [];
+        for (let i = 0; i < patrons.length; i++) {
+            orders.push(i);
+        }
+        let order = 0;
+        for (const i of shuffle(orders)) {
             const brag = document.createElement('div');
             brag.classList.add('brag');
-            brag.textContent = availBrags.splice(Math.abs(hash(x.textContent)) % availBrags.length - 1, 1)[0];
-            x.appendChild(brag);
+            const p = patrons[i];
+            brag.textContent = brags[i % brags.length];
+            p.appendChild(brag);
+            p.style.order = order++;
         }
     }
 

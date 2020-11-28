@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="description" content="Sauce for Strava™ Patreon Supporters"/>
+
+        <title>Sauce for Strava™ - Supporters</title>
+
+        <link rel="manifest" href="manifest.json"/>
+        <link id="favicon" rel="shortcut icon" href="images/favicon.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+        <style>
+            main {
+                padding: 1em 2em;
+            }
+
+            .thanks {
+                font-size: 0.7em;
+            }
+
+            .supporters {
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            patron {
+                display: block;
+                font-size: 3em;
+                font-family: 'Permanent Marker', sans-serif;
+                padding: 2rem;
+                width: min(max(33%, 20ch), 100%);
+            }
+
+            patron .brag {
+                font-family: sans-serif;
+                font-size: 0.8rem;
+            }
+
+            #nav nav {
+                flex-wrap: nowrap !important;
+            }
+
+            #nav .left {
+                height: initial;
+                flex: 0 0 auto !important;
+            }
+
+            #nav .center {
+                height: initial;
+                font-size: 2em;
+                flex: 1 1 auto;
+                color: #ff4400e0;
+            }
+        </style>
+
+        <script defer type="text/javascript" src="js/supporters.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-64711223-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163853410-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-163853410-1');
+        </script>
+    </head>
+
+    <body id="top">
+        <header id="nav">
+            <nav>
+                <div class="left">
+                    <a class="anchor logo" href="/index.html"><img class="branding" src="images/logo_horiz_320x120.png"/></a>
+                </div>
+                <div class="center">
+                    Sauce Supporters<br/>
+                    <small class="caption thanks">A massive thanks to these patrons for making Sauce possible!</small>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="scrollable supporters">
+                <patron>jimmy carroll</patron>
+                <patron>Helena Broomham</patron>
+                <patron>Arvils Vikstrems</patron>
+                <patron>Pyankov Vitaliy</patron>
+                <patron>Dennis Prahl</patron>
+                <patron>Maximilian Fink</patron>
+                <patron>Adam Kollender</patron>
+                <patron>Brian Schworm</patron>
+                <patron>Y G</patron>
+                <patron>Jon Moore</patron>
+                <patron>Mario Augl-Buchberger</patron>
+                <patron>Matthew S.</patron>
+                <patron>Dale Brott</patron>
+                <patron>Darin Steele</patron>
+                <patron>Michael McCarthy</patron>
+                <patron>Sam Selfridge</patron>
+                <patron>Rob Rutscher</patron>
+                <patron>TakoTabak</patron>
+                <patron>Andrew Beldecos</patron>
+                <patron>Hugues Compere</patron>
+                <patron>Greg Perkins</patron>
+                <patron>Bernard Galea</patron>
+                <patron>Jennifer Belt</patron>
+                <patron>Cody Rayl</patron>
+            </section>
+
+            <section class="scrollable">
+                <p>
+                    If you would like to have your name in this list
+                    <a href="https://www.patreon.com/bePatron?u=32064618" target="_blank">become a "Sauce Star" patron!</a>
+                </p>
+            </section>
+        </main>
+
+
+        <footer>
+            <row>
+                <column>
+                    <b>Copyright 2020 Sauce, LLC</b>
+                    <ul>
+                        <li><a href="mailto:support@saucellc.io" target="_blank">Contact Us</a>
+                        <li><a href="/sauce4strava/pages/privacy" target="_blank">Privacy Policy</a></li>
+                        <li>Updated: Nov 24, 2020</li>
+                    </ul>
+                </column>
+                <column>
+                    <b>Social</b>
+                    <ul>
+                        <li><a href="https://www.patreon.com/sauce4strava" target="_blank">Patreon</a></li>
+                        <li><a href="https://www.instagram.com/sauce4strava/" target="_blank">Follow on Instagram</a></li>
+                        <li><a href="https://www.github.com/SauceLLC/sauce4strava" target="_blank">GitHub Source Code</a></li>
+                    </ul>
+                </column>
+                <column>
+                    <b>Official Installs</b>
+                    <ul>
+                        <li><a class="install-link"
+                               href="https://chrome.google.com/webstore/detail/eigiefcapdcdmncdghkeahgfmnobigha"
+                               target="_blank"><img src="images/ChromeWebStore_BadgeWBorder_v2_496x150.png"/></a></li>
+                        <li><a class="install-link" href="https://addons.mozilla.org/addon/sauce4strava"
+                               target="_blank"><img src="images/get-the-addon.png"/></a></li>
+                        <li><a class="install-link safari-download"><img src="images/safari-download.png"/></a></li>
+                    </ul>
+                </column>
+            </row>
+        </footer>
+
+        <a class="anchor top" href="#top" title="Scroll to top">⬆</a>
+    </body>
+</html>

@@ -2,9 +2,12 @@
     const patrons = (async function() {
         const uri = location.protocol === 'file:' ? 'https://saucellc.io/' : '/';
         const [brags, supporters] = await Promise.all([
-            fetch(uri + 'brags.json').then(x => x => x.json()),
-            fetch(uri + 'supporters.json').then(x => x => x.json())
+            fetch(uri + 'brags.json').then(x => x.json()),
+            fetch(uri + 'supporters.json').then(x => x.json())
         ]);
+        if (brags.length < supporters.length) {
+            console.warn("Need more brags!");
+        }
         return {brags, supporters};
     })();
         

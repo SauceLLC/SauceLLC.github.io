@@ -206,6 +206,10 @@ huge {
     font-family: 'Permanent Marker', sans-serif;
 }
 
+header.intro {
+    background-color: #008659;
+}
+
 header.intro#features {
     background-color: #008659;
 }

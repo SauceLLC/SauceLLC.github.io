@@ -5,7 +5,7 @@
             const r = await fetch('alpha_updates.json');
             const data = await r.json();
             const id = '0f1b4c25-4ab0-411e-ba22-e56c27f3d152';
-            const updates = data[`{${id}}`].updates;
+            const updates = data.addons[`{${id}}`].updates;
             updates.reverse();
             let i = 0;
             for (const x of updates) {

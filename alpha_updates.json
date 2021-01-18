@@ -7,6 +7,9 @@
             }, {
                 "version": "7.1.0.1",
                 "update_link": "https://saucellc.io/builds/firefox/sauce_for_stravatm_alpha-7.1.0.1-an+fx.xpi"
+            }, {
+                "version": "7.1.0.2",
+                "update_link": "https://saucellc.io/builds/firefox/sauce_for_stravatm_alpha-7.1.0.2-an+fx.xpi"
             }]
         }
     }

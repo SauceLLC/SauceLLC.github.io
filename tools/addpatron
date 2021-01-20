@@ -7,7 +7,7 @@ import shellish
 
 
 @shellish.autocommand
-def addpatron(strava_id, patreon_id, level=10):
+def addpatron(strava_id, patreon_id, level=10, dryrun=False):
     project_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
     fname = os.path.join(project_root, 'patrons.json')
     with open(fname) as f:
@@ -18,11 +18,12 @@ def addpatron(strava_id, patreon_id, level=10):
         "level": level,
         "pidhash": pidhash
     }
-    with open(fname, 'w') as f:
-        json.dump(patrons, f, indent=4)
-    os.system(f'cd {project_root}; git commit patrons.json && git push')
+    if not dryrun:
+        with open(fname, 'w') as f:
+            json.dump(patrons, f, indent=4)
+        os.system(f'cd {project_root}; git commit patrons.json && git push')
+    else:
+        print('Strava ID:', sidhash)
+        print('Patreon ID:', pidhash)
 
 addpatron()
-
-
-

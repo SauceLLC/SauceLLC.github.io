@@ -4,6 +4,10 @@ html {
     font-family: sans-serif;
 }
 
+html:not(.edge-browser) .edge-only {
+    display: none;
+}
+
 html.fastscroll {
     scroll-behavior: auto;
 }

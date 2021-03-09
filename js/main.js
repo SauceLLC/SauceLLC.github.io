@@ -3,8 +3,12 @@
         safariP.then(b => document.querySelectorAll(`a.safari-download`).forEach(x =>
             x.setAttribute('href', b.url)));
         const isFirefox = navigator.userAgent.indexOf("Firefox") !== -1;
+        const isEdge = navigator.userAgent.indexOf(" Edg/") !== -1;
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         const browser = isFirefox ? 'firefox' : isSafari ? 'safari' : 'chrome';
+        if (isEdge) {
+            document.documentElement.addClass('edge-browser');
+        }
         const installLink = document.querySelector(`a.store-install.${browser}`);
         installLink.classList.remove('hidden');
 

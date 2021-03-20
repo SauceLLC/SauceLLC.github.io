@@ -34,7 +34,7 @@
     }
 
     function onLoad() {
-        const pages = ['features', 'about', 'patron', 'support'];
+        const pages = ['features', 'about', 'patron', 'contact'];
         for (const x of pages) {
             if (location.pathname.match(new RegExp(`^\\/${x}(\\.html)?(\\?|$|#)`))) {
                 const anchor = document.querySelector(`#${x}`);

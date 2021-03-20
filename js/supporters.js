@@ -40,7 +40,16 @@
         const frag = document.createDocumentFragment();
         for (const i of shuffle(orders)) {
             const patron = document.createElement('patron');
-            patron.textContent = supporters[i];
+            const sup = supporters[i];
+            if (sup.url) {
+                const link = document.createElement('a');
+                link.href = sup.url;
+                link.target = '_blank';
+                link.textContent = sup.name;
+                patron.appendChild(link);
+            } else {
+                patron.textContent = sup.name;
+            }
             const brag = document.createElement('div');
             brag.classList.add('brag');
             brag.textContent = brags[i % brags.length];
@@ -48,8 +57,6 @@
             frag.appendChild(patron);
         }
         document.querySelector('section.supporters').appendChild(frag);
-            
-        //window.scrollTo(0, 0);
     }
 
     addEventListener('DOMContentLoaded', onDOMLoaded);

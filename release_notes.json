@@ -1,0 +1,188 @@
+[{
+    "version": "0.0.6",
+    "ts": 1433462400000,
+    "notes": ["Inline comments"]
+}, {
+    "version": "0.0.7",
+    "ts": 1435622400000,
+    "notes": ["Normalized power for selections in Analysis tab"]
+}, {
+    "version": "0.1.0",
+    "ts": 1441238400000,
+    "notes": [
+        "Heartrate stats in Peak Power table",
+        "Promise of reasonable stability"
+     ]
+}, {
+    "version": "1.0.0",
+    "ts": 1462924800000,
+    "notes": [
+         "Fix for updated strava comment data structure",
+         "Improved device compatibility of peak power analysis"
+    ]
+}, {
+    "version": "1.1.0",
+    "ts": 1494460800000,
+    "notes": [
+         "Fix analysis view's inline comments to accommodate site changes",
+         "Minor style tweak for analysis view"
+    ]
+}, {
+    "version": "1.2.0",
+    "ts": 1494633600000,
+    "notes": [
+        "Fixes for several loading glitches",
+        "Smoother FTP override handling;  Added clearing support",
+        "Fix for ranking badges when gender is unspecified",
+        "Style and tooltip additions to better explain peak power"
+    ]
+}, {
+    "version": "2.0.0",
+    "ts": 1508803200000,
+    "notes": ["Running support"]
+}, {
+    "version": "3.0.0",
+    "ts": 1544832000000,
+    "notes": [
+        {
+            "html": "Activity Feed Filtering (click the sauce bottle to change)",
+            "children": [
+                "Show/hide virtual runs and rides (e.g. Zwift)",
+                "Show/hide promotions",
+                "Show/hide challenges"
+            ]
+        },
+        "World Ranking badges for segments"
+    ]
+}, {
+    "version": "3.2.0",
+    "ts": 1576627200000,
+    "notes": [
+        "Show average pace in running \"Best Pace\" chart instead of elapsed time",
+        "Use kilometer based pace for metric loving athletes"
+    ]
+}, {
+    "version": "4.0.0",
+    "ts": 1577318400000,
+    "notes": [
+        "Support for irregular recording intervals",
+        "Fixes to running pace calculations",
+        "Add elevation stats to peak power and best pace dialogs",
+        "Add cadence stat to peak power and best pace dialogs",
+        "Support auto closing dialogs when clicking away from them",
+        "Much needed code cleanup",
+        "Add name information to Advanced menu's FTP overrides table"
+    ]
+}, {
+    "version": "4.1.0",
+    "ts": 1577318400000,
+    "notes": ["Support for VAM"]
+}, {
+    "version": "4.3.0",
+    "ts": 1577750400000,
+    "notes": ["TCX and GPX export"]
+}, {
+    "version": "5.0.0",
+    "ts": 1580688000000,
+    "notes": [
+        {
+            "html": "Multi category peak effort chart",
+            "children": ["Power, NP, VAM, HR, Pace, GAP"]
+        },
+        "Settable peak effort ranges: time periods and distances (Advanced Options)",
+        "Upgraded algo for power data",
+        {
+            "html": "Upgraded analysis view that works in all locales",
+            "children": [
+                "Kilojoule field",
+                "Moving vs elapsed time stats",
+                "Improved placement on page"
+            ]
+        },
+        "Running power (watts) estimate",
+        "Raw data views; CSV table and graphs",
+        "Kilojoules in analysis view",
+        "Updated algo for VAM calculations (smoothing)",
+        "Rank badges for analysis selections",
+        "Support for HiDPI graphs"
+    ]
+}, {
+    "version": "5.1.0",
+    "ts": 1582761600000,
+    "notes": [
+        "Responsive layout",
+        "Mobile support (Firefox only)",
+        {
+            "html": "Additional Peak information tables",
+            "children": [
+                "Cadence",
+                "Pace for cycling",
+                "Power for running"
+            ]
+        },
+        "Swim activity support",
+        "Other activity support (XC ski, Alpine ski, etc)",
+        "Bug fixes a plenty",
+        "Detailed Run segments (using segment support of rides but for runs)"
+    ]
+}, {
+    "version": "5.2.0",
+    "ts": 1583712000000,
+    "notes": [
+        "Added French, Italian, Polish and German translations",
+        "Analysis page menu navigation history <b>OPTION</b>"
+    ]
+}, {
+    "version": "5.3.0",
+    "ts": 1585526400000,
+    "notes": ["Dark mode theme"]
+}, {
+    "version": "5.4.0",
+    "ts": 1586822400000,
+    "notes": ["Sea Power - Estimate power capacity of effort at sea level"]
+}, {
+    "version": "5.5.0",
+    "ts": 1588723200000,
+    "notes": ["Performance Predictor - Estimate power requirements for any activity selection"]
+}, {
+    "version": "6.0.0",
+    "ts": 1592438400000,
+    "notes": [
+        "Revised active time calculation (better supports smart recording interval)",
+        "Live Segment creation for Garmin devices (Patron Only)"
+    ]
+}, {
+    "version": "6.1.0",
+    "ts": 1594339200000,
+    "notes": [
+        "Option to hide subscribe upsells",
+        "Add Sauce options to user menu"
+    ]
+}, {
+    "version": "6.2.0",
+    "ts": 1595721600000,
+    "notes": [
+        "Support for Perf Predictor in segments view",
+        "Upgraded Live Segment creator tool with editing support"
+    ]
+}, {
+    "version": "7.0.0",
+    "ts": 1606694400000,
+    "notes": [
+        "xPower support",
+        "Safari support",
+        "Trailforks support [BETA]",
+        {
+            "html": "Complete redesign of Peak effort dialog",
+            "children": [
+                "Segment display in peak effort dialog",
+                "Customization of graph data"
+            ]
+        },
+        "Enhanced analysis bar with expand/collapse support",
+        "Improve Strava page and leaderboard load times with cache system",
+        "Bug fixes for Perf Predictor when evaluating downhill efforts",
+        "Export estimated watts in TCX files",
+        "Theme support for local legends pages and inserts"
+    ]
+}]

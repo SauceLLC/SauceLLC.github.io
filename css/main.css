@@ -39,14 +39,14 @@ a:hover {
 }
 
 body > #nav {
-    background: #333;
+    background: #333 !important;
     box-shadow: 0 1px 5px 0 #000b;
     margin-bottom: 3em;
 }
 
-#nav,
-body > section,
-body > footer {
+#nav:not(.nosticky),
+body > section:not(.nosticky),
+body > footer:not(.nosticky) {
     position: sticky;
     top: 0;
     z-index: 10;

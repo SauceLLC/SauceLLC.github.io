@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="description" content="Sauce for Strava™ Patreon Supporters"/>
+        <meta name="description" content="Sauce for Strava™ Release Notes"/>
 
-        <title>Sauce for Strava™ - Supporters</title>
+        <title>Sauce for Strava™ - Release Notes</title>
 
         <link rel="manifest" href="manifest.json"/>
         <link id="favicon" rel="shortcut icon" href="images/favicon.png"/>
@@ -22,21 +22,19 @@
                 font-size: 0.7em;
             }
 
-            .supporters {
-                flex-wrap: wrap;
-                flex-direction: row;
-            }
-            patron {
-                display: block;
-                font-size: 3em;
-                font-family: 'Permanent Marker', sans-serif;
-                padding: 2rem;
-                width: min(max(33%, 20ch), 100%);
+            .notes header {
+                display: flex;
+                font-size: 1.4em;
+                justify-content: space-between;
+                font-variant: tabular-nums;
+                color: #ff4400e0;
             }
 
-            patron .brag {
-                font-family: sans-serif;
-                font-size: 0.9rem;
+            release {
+                display: block;
+                font-size: 1.2em;
+                padding: 1.2rem;
+                width: min(max(70%, 40ch), 100%);
             }
 
             #nav nav {
@@ -56,7 +54,7 @@
             }
         </style>
 
-        <script defer type="text/javascript" src="js/supporters.js"></script>
+        <script defer type="text/javascript" src="js/release_notes.js"></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -83,24 +81,13 @@
                     <a class="anchor logo" href="/index.html"><img class="branding" src="images/logo_horiz_320x120.png"/></a>
                 </div>
                 <div class="center">
-                    Sauce Supporters<br/>
-                    <small class="caption thanks">A massive thanks to these
-                        <a href="https://www.patreon.com/bePatron?u=32064618" target="_blank">patrons</a>
-                        for making Sauce possible!</small>
+                    Release Notes<br/>
                 </div>
             </nav>
         </header>
 
         <main>
-
-            <section class="scrollable supporters"></section>
-
-            <section class="scrollable">
-                <p>
-                    If you would like to have your name in this list
-                    <a href="https://www.patreon.com/bePatron?u=32064618" target="_blank">become a "Sauce Star" patron!</a>
-                </p>
-            </section>
+            <section class="scrollable notes"></section>
         </main>
     </body>
 </html>

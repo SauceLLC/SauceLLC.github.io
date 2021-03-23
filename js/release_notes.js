@@ -25,6 +25,9 @@
         const notes = await notesPromise;
         const frag = document.createDocumentFragment();
         for (const x of notes.reverse()) {
+            if (x.private) {
+                continue;
+            }
             const release = document.createElement('release');
             release.id = x.version;
             release.innerHTML = `

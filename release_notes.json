@@ -185,4 +185,11 @@
         "Export estimated watts in TCX files",
         "Theme support for local legends pages and inserts"
     ]
+}, {
+    "version": "7.99.5",
+    "private": true,
+    "ts": 1616536997906,
+    "notes": [
+        "Implement this release notes system!"
+    ]
 }]

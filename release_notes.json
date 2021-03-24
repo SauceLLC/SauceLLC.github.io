@@ -185,4 +185,17 @@
         "Export estimated watts in TCX files",
         "Theme support for local legends pages and inserts"
     ]
+}, {
+    "version": "7.1.0",
+    "ts": 1616626172171,
+    "notes": [
+        "Added Peak Watts/Kg support",
+        {
+            "html": "Added an editor for customizing the Peak ranges (i.e. times and distances)",
+            "children": [
+                "Accessed via the \"Setting\" option in the Peak table"
+            ]
+        },
+        "Refined rank badge formula (i.e. Cat 1, Cat 2, etc) to use NP and support long efforts over 1 hour"
+    ]
 }]

@@ -198,4 +198,11 @@
         },
         "Refined rank badge formula (i.e. Cat 1, Cat 2, etc) to use NP and support long efforts over 1 hour"
     ]
+}, {
+    "version": "7.1.1",
+    "ts": 1616799696233,
+    "notes": [
+        "Support @mentions for the analysis inline comments",
+        "Fix support for club event discussions"
+    ]
 }]

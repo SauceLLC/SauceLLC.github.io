@@ -205,4 +205,10 @@
         "Support @mentions for the analysis inline comments",
         "Fix support for club event discussions"
     ]
+}, {
+    "version": "7.1.3",
+    "ts": 1617666044633,
+    "notes": [
+        "Added activity export in FIT file format"
+    ]
 }]

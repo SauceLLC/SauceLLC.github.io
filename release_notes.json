@@ -209,6 +209,7 @@
     "version": "7.1.3",
     "ts": 1617666044633,
     "notes": [
-        "Added activity export in FIT file format"
+        "Added activity export in FIT file format",
+        "Fixed Live Segment support for Safari users"
     ]
 }]

@@ -1,7 +1,5 @@
 (function() {
     function onDOMLoaded() {
-        safariP.then(b => document.querySelectorAll(`a.safari-download`).forEach(x =>
-            x.setAttribute('href', b.url)));
         const isFirefox = navigator.userAgent.indexOf("Firefox") !== -1;
         const isEdge = navigator.userAgent.indexOf(" Edg/") !== -1;
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -45,7 +43,6 @@
     }
 
     const supP = fetch('https://saucellc.io/supporters.json').then(x => x.json());
-    const safariP = fetch('https://saucellc.io/builds/safari/LATEST.json').then(x => x.json());
     addEventListener('DOMContentLoaded', onDOMLoaded);
     addEventListener('load', onLoad);
 })();

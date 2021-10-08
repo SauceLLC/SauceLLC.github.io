@@ -218,4 +218,11 @@
     "notes": [
         "Performance Predictor can now model drafting effects"
     ]
+}, {
+    "version": "7.3.0",
+    "ts": 1633735580514,
+    "notes": [
+        "Added W'bal and GAP graphs to analysis page",
+        "Added support for data smoothing in analysis graphs"
+    ]
 }]

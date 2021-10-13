@@ -225,4 +225,12 @@
         "Added W'bal and GAP graphs to analysis page",
         "Added support for data smoothing in analysis graphs"
     ]
+}, {
+    "version": "7.3.1",
+    "ts": 1634166520334,
+    "notes": [
+        "Added Pw:Hr / Aerobic Decoupling to analysis stats",
+        "Exclude zeros and bad data from cadence and heart rate analysis",
+        "Fixed v7.3.0 regression with analysis stats disappearing"
+    ]
 }]

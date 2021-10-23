@@ -16,7 +16,6 @@ html.fastscroll {
     box-sizing: inherit;
 }
 
-
 body {
     background: #222;
     color: #f0f0f0;
@@ -210,6 +209,10 @@ huge {
     font-family: 'Permanent Marker', sans-serif;
 }
 
+big {
+    font-size: 2em;
+}
+
 header.intro {
     background-color: #008659;
 }
@@ -246,6 +249,10 @@ header.intro#intro {
 
 #patron a.patron img:hover {
     box-shadow: 1px 1px 5px 0 #0003;
+}
+
+card iframe.strava-club {
+    max-height: 80vh !important;
 }
 
 a.top {

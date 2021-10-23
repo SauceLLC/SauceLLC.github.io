@@ -233,4 +233,12 @@
         "Exclude zeros and bad data from cadence and heart rate analysis",
         "Fixed v7.3.0 regression with analysis stats disappearing"
     ]
+}, {
+    "version": "7.3.3",
+    "ts": 1634956801712,
+    "notes": [
+        "Added Food / Drink energy expendeture overview",
+        "Added Kudo All button to dashboard",
+        "Fixed incorrect speed bug (upstream change)"
+    ]
 }]

@@ -241,4 +241,22 @@
         "Added Kudo All button to dashboard",
         "Fixed incorrect speed bug (upstream change)"
     ]
+}, {
+    "version": "7.9.9.1",
+    "ts": 1644431604068,
+    "notes": [{
+        "html": "Official release of Sauce Performance",
+        "children": [
+            "Comprehensive training and analysis package for athletes and coaches",
+            "Provides access to historical peak performances",
+            "Allows managing athlete weight (and FTP) over time",
+            "Historical time-in-zones by week, month and year",
+            "Training load charts for fitness, fatigue and form",
+            "Training load charts for fitness, fatigue and form",
+            "Elevation gained over time chart",
+            "Distance, Time, TSS and Energy charts by week, month and year",
+            "Fully customizable layouts",
+            "Watch the <a href=\"https://youtu.be/JEmPKlhIXbU\" target=\"_blank\">Sauce Performance Walkthrough</a> for more info"
+        ]
+    ]
 }]

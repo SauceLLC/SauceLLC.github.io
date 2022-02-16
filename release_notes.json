@@ -242,8 +242,8 @@
         "Fixed incorrect speed bug (upstream change)"
     ]
 }, {
-    "version": "7.9.9.1",
-    "ts": 1644431604068,
+    "version": "8.0.0",
+    "ts": 1644985571624,
     "notes": [{
         "html": "Official release of Sauce Performance",
         "children": [

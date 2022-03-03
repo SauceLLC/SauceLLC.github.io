@@ -237,7 +237,7 @@
     "version": "7.3.3",
     "ts": 1634956801712,
     "notes": [
-        "Added Food / Drink energy expendeture overview",
+        "Added Food / Drink energy expenditure overview",
         "Added Kudo All button to dashboard",
         "Fixed incorrect speed bug (upstream change)"
     ]
@@ -259,5 +259,11 @@
         ]
     }, {
         "html": "Keyboard shortcuts for the analysis page"
+    }]
+}, {
+    "version": "8.0.4",
+    "ts": 1646280143773,
+    "notes": [{
+        "html": "Batch export of <a href=\"https://youtu.be/p0-ZYPwI42I\" target=\"_blank\">Sauce Performance</a> activities in FIT format"
     }]
 }]

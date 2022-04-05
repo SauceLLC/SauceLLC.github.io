@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Patreon Link Processor - Sauce for Zwift™</title>
+        <script type="text/javascript">
+            // This page must be run in an electron context as the renderer process
+            // handles the fulfillment.
+            const q = new URLSearchParams(location.search);
+            document.dispatchEvent(new CustomEvent('patreon-auth-code', {detail: q.get('code')}));
+        </script>
+    </head>
+    <body>
+        <h1>Processing...</h1>
+    </body>
+</html>

@@ -9,8 +9,59 @@
             const q = new URLSearchParams(location.search);
             document.dispatchEvent(new CustomEvent('patreon-auth-code', {detail: q.get('code')}));
         </script>
+        <style>
+            html, body {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+
+            }
+            html {
+                box-sizing: border-box;
+                padding: 0;
+            }
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+            body {
+                background-color: black;
+                background-image:
+                    linear-gradient(135deg, rgba(219, 0, 0, 0.8705882353), transparent),
+                    linear-gradient(315deg, rgba(2, 14, 100, 0.8196078431), transparent);
+                color: white;
+                padding: 2em;
+                font-family: monospace;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @keyframes pournshake {
+                0%,
+                60%,
+                100% { transform: translate(0, 0)           rotate(0)      scale(1);   }
+                30%  { transform: translate(0, 0)           rotate(160deg) scale(1.2); }
+                32%  { transform: translate(0.2em, 0.2em)   rotate(165deg) scale(1.2); }
+                34%  { transform: translate(-0.2em, 0)      rotate(155deg) scale(0.8); }
+                36%  { transform: translate(0.2em, 0.1em)   rotate(160deg) scale(1.2); }
+                38%  { transform: translate(-0.2em, -0.2em) rotate(145deg) scale(0.8); }
+                40%  { transform: translate(0.2em, 0.2em)   rotate(145deg) scale(1.2); }
+                42%  { transform: translate(-0.2em, 0)      rotate(155deg) scale(0.8); }
+                44%  { transform: translate(0.2em, 0.1em)   rotate(160deg) scale(1.2); }
+                46%  { transform: translate(-0.2em, -0.2em) rotate(165deg) scale(0.8); }
+            }
+            img.logo {
+                transform: rotate(-20deg);
+                animation-name: pournshake;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                height: 120px;
+                margin-right: 2em;
+            }
+        </style>
     </head>
     <body>
-        <h1>Processing...</h1>
+        <img src="images/logo_vert_120x320.png" class="logo"/><h3>Looking up Sauce Patreon membership...</h3>
     </body>
 </html>

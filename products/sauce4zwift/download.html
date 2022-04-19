@@ -94,11 +94,8 @@
             async function main() {
                 const r = await fetch('https://api.github.com/repos/SauceLLC/sauce4zwift-releases/releases/latest');
                 const data = await r.json();
-                const name = 'sauce4zwift';
-                const version = data.name;
-                const fname = `${name}-${version}`;
                 for (const x of data.assets) {
-                    if (x.name === fname + '.exe' || x.name === fname + '.zip') {
+                    if (x.name.match(/^sauce4zwift-.*?\.(zip|exe)$/)) {
                         files.push(x);
                         console.debug("downloads", x.name, x.download_count);
                     }

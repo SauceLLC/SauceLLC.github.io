@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+        <title>Sauce for Zwift Cast Sender</title>
+
+        <script type="module">
+            const appId = '830B7C7E';
+            function initializeCastApi() {
+                cast.framework.CastContext.getInstance().setOptions({
+                    receiverApplicationId: appId,
+                    autoJoinPolicy: chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED
+                });
+            }
+    
+            window.__onGCastApiAvailable = function(isAvailable) {
+                if (isAvailable) {
+                    initializeCastApi();
+                }
+            };
+        </script>
+
+        <script defer src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
+    </head>
+    <body>
+        <section>
+            <h1>Cast Test</h1>
+        </section>
+    </body>
+</html>

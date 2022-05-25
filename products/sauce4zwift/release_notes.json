@@ -2,4 +2,16 @@
     "version": "0.6.1",
     "ts": 1651102868389,
     "notes": ["Compatibility improvements with Borderless Gaming"]
+}, {
+    "version": "0.7.0",
+    "ts": 1653427198775,
+    "notes": [
+        "Window management system",
+        "Gauge windows (power, draft, pace, heart rate)",
+        "Configurable <i>Watching</i> window",
+        "Enhancements for <i>Groups</i> window",
+        "Athlete profile view",
+        "FIT file export (Nearby window)",
+        "Memory utilization improvements"
+    ]
 }]

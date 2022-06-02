@@ -14,4 +14,14 @@
         "FIT file export (Nearby window)",
         "Memory utilization improvements"
     ]
+}, {
+    "version": "0.8.0",
+    "ts": 1654149010833,
+    "notes": [
+        "Bug fixes for disappearing overview window",
+        "More use of team badges",
+        "Athlete mute and pinning support",
+        "Disable GPU by default",
+        "Optimized Zwift login and API usage"
+    ]
 }]

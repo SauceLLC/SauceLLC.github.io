@@ -22,6 +22,7 @@
         "More use of team badges",
         "Athlete mute and pinning support",
         "Disable GPU by default",
-        "Optimized Zwift login and API usage"
+        "Optimized Zwift login and API usage",
+        "Added tray menu"
     ]
 }]

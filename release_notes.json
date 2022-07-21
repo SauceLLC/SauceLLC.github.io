@@ -277,4 +277,11 @@
             "Themes for dashboard and profile pages"
         ]
     }]
+}, {
+    "version": "8.1.0",
+    "ts": 1658436761534,
+    "notes": [
+        "Fixed NP and XP calculations that resulted in incorrect TSS for some activities",
+        "Added custom font and text size options"
+    ]
 }]

@@ -282,6 +282,7 @@
     "ts": 1658436761534,
     "notes": [
         "Fixed NP and XP calculations that resulted in incorrect TSS for some activities",
-        "Added custom font and text size options"
+        "Added custom font and text size options",
+        "Adapt to upstream comments changes.  Fixes inline activity comments"
     ]
 }]

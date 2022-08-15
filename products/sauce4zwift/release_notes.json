@@ -25,4 +25,18 @@
         "Optimized Zwift login and API usage",
         "Added tray menu"
     ]
+}, {
+    "version": "0.9.0",
+    "ts": 1660601138598,
+    "notes": [
+        {
+            "html": "Restore core functionality following the July 2022 protocol changes",
+            "children": [
+                "Switch from packet sniffing to full game client implementation",
+                "A second Zwift login is required to avoid duplicate connection detection.  It does not need to be a paid account and you can use an alias email such as, <code>myemail+sauce@gmail.com</code>.",
+                "The game will prompt you for both logins as needed."
+            ]
+        },
+        "Added Logs window for debugging (this release will be buggy)"
+    ]
 }]

@@ -38,4 +38,10 @@
             ]
         }
     ]
+}, {
+    "version": "0.9.1",
+    "ts": 1660880418661,
+    "notes": [
+        "Added debug logging file (sauce.log) and window (Debug Logs)"
+    ]
 }]

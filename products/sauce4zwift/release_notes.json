@@ -52,4 +52,10 @@
         "Added connection pooling for reduced latency",
         "Improvements to Debug Log window"
     ]
+}, {
+    "version": "0.9.3",
+    "ts": 1661145168785,
+    "notes": [
+        "Handle reconnecting expired sessions to Zwift relay servers"
+    ]
 }]

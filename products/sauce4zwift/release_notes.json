@@ -58,4 +58,14 @@
     "notes": [
         "Handle reconnecting expired sessions to Zwift relay servers"
     ]
+}, {
+    "version": "0.9.4",
+    "ts": 1661225660241,
+    "notes": [
+        "Support for recovering from network outages",
+        "Added log file rotation a la., sauce.log.1, sauce.log.2, etc.",
+        "Added Button in Device Logs window to open the log folder directly",
+        "Increased verbosity of Game Monitor status for diagnostics"
+    ]
+
 }]

@@ -67,5 +67,15 @@
         "Added Button in Device Logs window to open the log folder directly",
         "Increased verbosity of Game Monitor status for diagnostics"
     ]
-
+}, {
+    "version": "0.10.0",
+    "ts": 1663047454852,
+    "notes": [
+        "RealGap v2: Improved gap calculations",
+        "Added customizable names for windows",
+        "Added custom background color for Nearby and Watching windows",
+        "Added option for always visible control buttons on Watching window",
+        "Added event/route fields to Nearby and Watching windows",
+        "Fixed scaling of Watching window with less than 3 rows"
+    ]
 }]

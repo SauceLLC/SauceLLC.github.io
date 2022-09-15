@@ -69,13 +69,14 @@
     ]
 }, {
     "version": "0.10.0",
-    "ts": 1663047454852,
+    "ts": 1663243136977,
     "notes": [
         "RealGap v2: Improved gap calculations",
         "Added customizable names for windows",
         "Added custom background color for Nearby and Watching windows",
         "Added option for always visible control buttons on Watching window",
         "Added event/route fields to Nearby and Watching windows",
+        "Added Events window (prototype/alpha)",
         "Fixed scaling of Watching window with less than 3 rows"
     ]
 }]

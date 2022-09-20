@@ -79,4 +79,14 @@
         "Added Events window (prototype/alpha)",
         "Fixed scaling of Watching window with less than 3 rows"
     ]
+}, {
+    "version": "0.10.3",
+    "ts": 1663679465076,
+    "notes": [
+        "Improved auto-update with ability to defer",
+        "Added Logout button for Patreon Link to workaround authentication issues",
+        "Added W'bal Gauge and Overview field",
+        "Added multiple monitor support",
+        "Fixes/optimizations for Groups window"
+    ]
 }]

@@ -72,6 +72,6 @@
     {"name": "Steve Richards"},
     {"name": "Gurkan Erdemli"},
     {"name": "Gareth Hay"},
-    {"name": "George Haslett"},
+    {"name": "George Haslett", "url": "https://twitter.com/george"},
     {"name": "Brian Lucido", "url": "https://gotoes.org/strava"}
 ]

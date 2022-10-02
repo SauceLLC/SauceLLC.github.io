@@ -77,14 +77,16 @@
         <script type="module">
             const files = [];
             const platforms = {
-                windows: 'Windows (64bit)',
+                windows: 'Windows',
                 mac: 'MacOS',
+                linux: 'Linux',
             };
 
             function render() {
+                files.push(files.shift()); // move linux from top to bottom
                 document.querySelector('.downloads').innerHTML = files.map(x => `
                     <div class="download">
-                        <div class="platform">${platforms[x.name.endsWith('.exe') ? 'windows' : 'mac']}:</div>
+                        <div class="platform">${platforms[x.name.endsWith('.exe') ? 'windows' : x.name.endsWith('.AppImage') ? 'linux' : 'mac']}:</div>
                         <a download href="${x.browser_download_url}">${x.name}</a>
                         <div class="size">(${Math.round(x.size / 1024 / 1024)}MB)</div>
                     </div>
@@ -95,7 +97,7 @@
                 const r = await fetch('https://api.github.com/repos/SauceLLC/sauce4zwift-releases/releases/latest');
                 const data = await r.json();
                 for (const x of data.assets) {
-                    if (x.name.match(/^sauce4zwift-.*?\.(zip|exe)$/)) {
+                    if (x.name.match(/^sauce4zwift-.*?\.(zip|exe|AppImage)$/)) {
                         files.push(x);
                         console.debug("downloads", x.name, x.download_count);
                     }
@@ -135,16 +137,21 @@
                 </div>
                 <div class="center">
                     Sauce for Zwift™ Download<br/>
-                    <small class="thanks"><b>PRE BETA WARNING:</b> This software will probably make your computer ignite.</small>
+                    <small class="thanks"><b>BETA WARNING:</b> This software will probably make your computer melt.</small>
                 </div>
             </nav>
         </header>
 
         <main>
             <section class="scrollable">
+                <p style="font-size: 1.3em; max-width: 80ch;">Hi! This is BETA software so please be patient and realize it's developed, supported and maintained by just one person.  There are no Docs, FAQs or really any sort of guides, so be prepared to click, right-click, double-click and hover everything to discover functionality.  I also highly recommend you connect your Patreon account to the Sauce Discord server where there are quite a few expert users.
+
+-Justin</p>
                 <h3>Latest releases:</h3>
-                <p>Auto update will handle any future updates.</p>
+
                 <div class="downloads"></div>
+
+                <p>Auto update will handle any future updates.</p>
             </section>
         </main>
     </body>

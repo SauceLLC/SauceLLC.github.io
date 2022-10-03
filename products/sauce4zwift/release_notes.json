@@ -94,7 +94,7 @@
     "ts": 1664678174640,
     "notes": [
         "Added themes",
-        "Fixed connection issues on machines clock skew",
+        "Fixed connection issues on machines with clock skew",
         "Fixed Watching/Overview fields not saving consistently",
         "Support for zoom and reload shortcuts: Ctrl/Command +/-/r",
         "Disable data in HUD-less events"

@@ -99,4 +99,30 @@
         "Support for zoom and reload shortcuts: Ctrl/Command +/-/r",
         "Disable data in HUD-less events"
     ]
+ }, {
+    "version": "0.11.0",
+    "ts": 1667534016548,
+    "notes": [
+        "Changed font to be more Zwift-like and support dynamic sizing",
+        "Changed REST API to use versioned endpoints",
+        "Added Auto reset/lap option for events",
+        "Added Auto lap option based on custom time or distance",
+        "Added follow-back status in Athletes window with ear marks on cards",
+        "Added support for <a href=\"https://saucellc.io/products/sauce4zwift/event_hashtags.html\" external target=\"_blank\">#hashtag based data culling in events</a>",
+        "Added cadence gauge",
+        "Added theme support and color override to gauges",
+        "Added reverse order chat option",
+        "Added new data fields to several windows; too many to list",
+        "Added <a href=\"https://github.com/SauceLLC/sauce4zwift-mod-example\" external target=\"_blank\">Mods system</a> to allow community based plugins and mods to the app",
+        "Added several new API endpoints for laps, segments, streams, etc",
+        "Added countless fun and exciting bugs for you to find and tell me about on discord",
+        "<a href=\"https://www.youtube.com/watch?v=KOO5S4vxi0o\" external target=\"_blank\">Added extra push over the cliff</a>",
+        "Improved support for running (i.e. pace vs speed)",
+        "Improved first-time-setup wording and explanations",
+        "Improved network error handling",
+        "Improved performance of web API",
+        "Fixed support for legacy browsers and vMix",
+        "Fixed various window resource issues for long running sessions",
+        "Fixed immediate update of theme in settings windows"
+    ]
 }]

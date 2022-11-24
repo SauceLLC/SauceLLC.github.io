@@ -218,4 +218,71 @@
     "notes": [
         "Performance Predictor can now model drafting effects"
     ]
+}, {
+    "version": "7.3.0",
+    "ts": 1633735580514,
+    "notes": [
+        "Added W'bal and GAP graphs to analysis page",
+        "Added support for data smoothing in analysis graphs"
+    ]
+}, {
+    "version": "7.3.1",
+    "ts": 1634166520334,
+    "notes": [
+        "Added Pw:Hr / Aerobic Decoupling to analysis stats",
+        "Exclude zeros and bad data from cadence and heart rate analysis",
+        "Fixed v7.3.0 regression with analysis stats disappearing"
+    ]
+}, {
+    "version": "7.3.3",
+    "ts": 1634956801712,
+    "notes": [
+        "Added Food / Drink energy expenditure overview",
+        "Added Kudo All button to dashboard",
+        "Fixed incorrect speed bug (upstream change)"
+    ]
+}, {
+    "version": "8.0.0",
+    "ts": 1644985571624,
+    "notes": [{
+        "html": "Official release of Sauce Performance",
+        "children": [
+            "Comprehensive training and analysis package for athletes and coaches",
+            "Access to historical peak performances",
+            "Athlete weight and FTP management over time",
+            "Historical time-in-zones by week, month and year",
+            "Training load charts for fitness, fatigue and form",
+            "Elevation gained over time chart",
+            "Distance, Time, TSS and Energy charts by week, month and year",
+            "Fully customizable layouts",
+            "Watch the <a href=\"https://youtu.be/p0-ZYPwI42I\" target=\"_blank\">Sauce Performance Walkthrough</a> for more info"
+        ]
+    }, {
+        "html": "Keyboard shortcuts for the analysis page"
+    }]
+}, {
+    "version": "8.0.4",
+    "ts": 1646280143773,
+    "notes": [{
+        "html": "Batch export of <a href=\"https://youtu.be/p0-ZYPwI42I\" target=\"_blank\">Sauce Performance</a> activities in FIT format"
+    }]
+}, {
+    "version": "8.0.8",
+    "ts": 1650760404223,
+    "notes": [{
+        "html": "Fixes for upstream Strava changes",
+        "children": [
+            "Kudo All button",
+            "Sauce Performance activity sync",
+            "Themes for dashboard and profile pages"
+        ]
+    }]
+}, {
+    "version": "8.1.0",
+    "ts": 1658436761534,
+    "notes": [
+        "Fixed NP and XP calculations that resulted in incorrect TSS for some activities",
+        "Added custom font and text size options",
+        "Adapt to upstream comments changes.  Fixes inline activity comments"
+    ]
 }]

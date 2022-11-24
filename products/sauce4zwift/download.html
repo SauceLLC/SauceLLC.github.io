@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="description" content="Sauce for Zwift™ Download"/>
+
+        <title>Sauce for Zwift™ - Download</title>
+
+        <link id="favicon" rel="shortcut icon" href="../../images/favicon.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+        <style>
+            main {
+                padding: 1em 2em;
+            }
+
+            .thanks {
+                color: #ddd;
+                font-size: 0.5em;
+            }
+
+            #nav nav {
+                flex-wrap: nowrap !important;
+            }
+
+            #nav .left {
+                height: initial;
+                flex: 0 0 auto !important;
+            }
+
+            #nav .center {
+                height: initial;
+                font-size: 2em;
+                flex: 1 1 auto;
+                color: #ff4400e0;
+            }
+
+            section {
+                align-items: flex-start;
+                padding: 1em;
+            }
+
+            .downloads {
+                font-size: 1.6em;
+                display: flex;
+                flex-direction: column;
+                padding: 1em 0;
+            }
+
+            .downloads .download {
+                padding: 0.5em;
+                display: flex;
+                align-items: center;
+            }
+
+            .download > * {
+                margin-right: 0.4em;
+            }
+
+            .download a {
+                display: block;
+            }
+
+            .download .platform {
+                min-width: 8em;
+            }
+
+            .download .size {
+                opacity: 0.7;
+                font-size: 0.7em;
+            }
+        </style>
+
+        <script type="module">
+            const files = [];
+            const platforms = {
+                windows: 'Windows',
+                mac: 'MacOS',
+                linux: 'Linux',
+            };
+
+            function render() {
+                files.push(files.shift()); // move linux from top to bottom
+                document.querySelector('.downloads').innerHTML = files.map(x => `
+                    <div class="download">
+                        <div class="platform">${platforms[x.name.endsWith('.exe') ? 'windows' : x.name.endsWith('.AppImage') ? 'linux' : 'mac']}:</div>
+                        <a download href="${x.browser_download_url}">${x.name}</a>
+                        <div class="size">(${Math.round(x.size / 1024 / 1024)}MB)</div>
+                    </div>
+                `).join('\n');
+            }
+
+            async function main() {
+                const r = await fetch('https://api.github.com/repos/SauceLLC/sauce4zwift-releases/releases/latest');
+                const data = await r.json();
+                for (const x of data.assets) {
+                    if (x.name.match(/^sauce4zwift-.*?\.(zip|exe|AppImage)$/)) {
+                        files.push(x);
+                        console.debug("downloads", x.name, x.download_count);
+                    }
+                }
+                if (document.readyState === 'loading') {
+                    document.addEventListener('DOMContentLoaded', render);
+                } else {
+                    render();
+                }
+            }
+            main();
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-64711223-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163853410-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-163853410-1');
+        </script>
+    </head>
+
+    <body id="top">
+        <header id="nav" class="nosticky">
+            <nav>
+                <div class="left">
+                    <a class="anchor logo" href="/index.html"><img class="branding" src="../../images/logo_horiz_320x120.png"/></a>
+                </div>
+                <div class="center">
+                    Sauce for Zwift™ Download<br/>
+                    <small class="thanks"><b>BETA WARNING:</b> This software will probably make your computer melt.</small>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="scrollable">
+                <p style="font-size: 1.3em; max-width: 80ch;">Hi! This is BETA software so please be patient and realize it's developed, supported and maintained by just one person.  There are no Docs, FAQs or really any sort of guides, so be prepared to click, right-click, double-click and hover everything to discover functionality.  I also highly recommend you connect your Patreon account to the Sauce Discord server where there are quite a few expert users.
+
+-Justin</p>
+                <h3>Latest releases:</h3>
+
+                <div class="downloads"></div>
+
+                <p>Auto update will handle any future updates.</p>
+            </section>
+        </main>
+    </body>
+</html>

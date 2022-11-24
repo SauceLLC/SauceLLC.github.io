@@ -11,7 +11,7 @@
         installLink.classList.remove('hidden');
 
         const supEl = document.querySelector('a.supporter-highlight');
-        supP.then(x => supEl.textContent = x[Math.floor(Math.random() * x.length)]);
+        supP.then(x => supEl.textContent = x[Math.floor(Math.random() * x.length)].name);
 
         const anchorLinks = document.querySelectorAll('a.anchor');
         for (const x of anchorLinks) {
@@ -42,7 +42,7 @@
         }
     }
 
-    const supP = fetch('https://saucellc.io/supporters.json').then(x => x.json());
+    const supP = fetch('https://saucellc.io/supporters-v2.json').then(x => x.json());
     addEventListener('DOMContentLoaded', onDOMLoaded);
     addEventListener('load', onLoad);
 })();

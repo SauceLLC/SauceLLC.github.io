@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script type="application/javascript">
+            const q = new URLSearchParams({
+                response_type: 'code',
+                client_id: 'iTRodvEu38fwIt8CKBQI82vlttzdB5UNdfHn3ayPE6GTV-3w5EGXYB5V3lkjT_cW',
+                redirect_uri: 'https://www.strava.com/sauce/patron',
+                scope: 'identity campaigns.members'
+            });
+            location.assign(`https://www.patreon.com/oauth2/authorize?${q}`);
+        </script>
+    </head>
+</html>

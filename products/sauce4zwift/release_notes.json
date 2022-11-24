@@ -1,0 +1,128 @@
+[{
+    "version": "0.6.1",
+    "ts": 1651102868389,
+    "notes": ["Compatibility improvements with Borderless Gaming"]
+}, {
+    "version": "0.7.0",
+    "ts": 1653427198775,
+    "notes": [
+        "Window management system",
+        "Gauge windows (power, draft, pace, heart rate)",
+        "Configurable <i>Watching</i> window",
+        "Enhancements for <i>Groups</i> window",
+        "Athlete profile view",
+        "FIT file export (Nearby window)",
+        "Memory utilization improvements"
+    ]
+}, {
+    "version": "0.8.0",
+    "ts": 1654149010833,
+    "notes": [
+        "Bug fixes for disappearing overview window",
+        "More use of team badges",
+        "Athlete mute and pinning support",
+        "Disable GPU by default",
+        "Optimized Zwift login and API usage",
+        "Added tray menu"
+    ]
+}, {
+    "version": "0.9.0",
+    "ts": 1660601138598,
+    "notes": [
+        {
+            "html": "Restore core functionality following the July 2022 protocol changes",
+            "children": [
+                "Switch from packet sniffing to full game client implementation",
+                "A second Zwift login is required to avoid duplicate connection detection.  It does not need to be a paid account and you can use an alias email such as, <code>myemail+sauce@gmail.com</code>.",
+                "The game will prompt you for both logins as needed."
+            ]
+        }
+    ]
+}, {
+    "version": "0.9.1",
+    "ts": 1660880418661,
+    "notes": [
+        "Added debug logging file (sauce.log) and window (Debug Logs)"
+    ]
+}, {
+    "version": "0.9.2",
+    "ts": 1661047784840,
+    "notes": [
+        "Bug fixes for data stalling",
+        "Added connection pooling for reduced latency",
+        "Improvements to Debug Log window"
+    ]
+}, {
+    "version": "0.9.3",
+    "ts": 1661145168785,
+    "notes": [
+        "Handle reconnecting expired sessions to Zwift relay servers"
+    ]
+}, {
+    "version": "0.9.4",
+    "ts": 1661225660241,
+    "notes": [
+        "Support for recovering from network outages",
+        "Added log file rotation a la., sauce.log.1, sauce.log.2, etc.",
+        "Added Button in Device Logs window to open the log folder directly",
+        "Increased verbosity of Game Monitor status for diagnostics"
+    ]
+}, {
+    "version": "0.10.0",
+    "ts": 1663243136977,
+    "notes": [
+        "RealGap v2: Improved gap calculations",
+        "Added customizable names for windows",
+        "Added custom background color for Nearby and Watching windows",
+        "Added option for always visible control buttons on Watching window",
+        "Added event/route fields to Nearby and Watching windows",
+        "Added Events window (prototype/alpha)",
+        "Fixed scaling of Watching window with less than 3 rows"
+    ]
+}, {
+    "version": "0.10.3",
+    "ts": 1663679465076,
+    "notes": [
+        "Improved auto-update with ability to defer",
+        "Added Logout button for Patreon Link to workaround authentication issues",
+        "Added W'bal Gauge and Overview field",
+        "Added multiple monitor support",
+        "Fixes/optimizations for Groups window"
+    ]
+}, {
+    "version": "0.10.7",
+    "ts": 1664678174640,
+    "notes": [
+        "Added themes",
+        "Fixed connection issues on machines with clock skew",
+        "Fixed Watching/Overview fields not saving consistently",
+        "Support for zoom and reload shortcuts: Ctrl/Command +/-/r",
+        "Disable data in HUD-less events"
+    ]
+ }, {
+    "version": "0.11.0",
+    "ts": 1667534016548,
+    "notes": [
+        "Changed font to be more Zwift-like and support dynamic sizing",
+        "Changed REST API to use versioned endpoints",
+        "Added Auto reset/lap option for events",
+        "Added Auto lap option based on custom time or distance",
+        "Added follow-back status in Athletes window with card earmarks",
+        "Added support for <a href=\"https://saucellc.io/products/sauce4zwift/event_hashtags.html\" external target=\"_blank\">#hashtag based data culling in events</a>",
+        "Added cadence gauge",
+        "Added theme support and color override to gauges",
+        "Added reverse order chat option",
+        "Added new data fields to several windows; too many to list",
+        "Added <a href=\"https://github.com/SauceLLC/sauce4zwift-mod-example\" external target=\"_blank\">Mods system</a> to allow community based plugins and mods to the app",
+        "Added several new API endpoints for laps, segments, streams, etc",
+        "Added countless fun and exciting bugs for you to find and tell me about on discord",
+        "<a href=\"https://www.youtube.com/watch?v=KOO5S4vxi0o\" external target=\"_blank\">Added extra push over the cliff</a>",
+        "Improved support for running (i.e. pace vs speed)",
+        "Improved first-time-setup wording and explanations",
+        "Improved network error handling",
+        "Improved performance of web API",
+        "Fixed support for legacy browsers and vMix",
+        "Fixed various window resource issues for long running sessions",
+        "Fixed immediate update of theme in settings windows"
+    ]
+}]

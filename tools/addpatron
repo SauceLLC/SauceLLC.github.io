@@ -2,6 +2,7 @@
 
 import hashlib
 import json
+import os
 import os.path
 import shellish
 
@@ -27,3 +28,5 @@ def addpatron(strava_id, patreon_id, level=10, dryrun=False):
         print('Patreon ID:', pidhash)
 
 addpatron()
+
+os.system("cat ~/project/SauceLLC.github.io/patrons.json | tail -n 5 | head -n 1")

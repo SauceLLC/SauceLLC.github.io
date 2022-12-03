@@ -99,7 +99,7 @@
         "Support for zoom and reload shortcuts: Ctrl/Command +/-/r",
         "Disable data in HUD-less events"
     ]
- }, {
+}, {
     "version": "0.11.0",
     "ts": 1667534016548,
     "notes": [
@@ -108,12 +108,12 @@
         "Added Auto reset/lap option for events",
         "Added Auto lap option based on custom time or distance",
         "Added follow-back status in Athletes window with card earmarks",
-        "Added support for <a href=\"https://saucellc.io/products/sauce4zwift/event_hashtags.html\" external target=\"_blank\">#hashtag based data culling in events</a>",
+        "Added support for <a href=\"https://sauce.llc/products/sauce4zwift/event_hashtags.html\" external target=\"_blank\">#hashtag based data culling in events</a>",
         "Added cadence gauge",
         "Added theme support and color override to gauges",
         "Added reverse order chat option",
         "Added new data fields to several windows; too many to list",
-        "Added <a href=\"https://github.com/SauceLLC/sauce4zwift-mod-example\" external target=\"_blank\">Mods system</a> to allow community based plugins and mods to the app",
+        "Added <a href=\"https://github.com/SauceLLC/sauce4zwift-mod-example\" external target=\"_blank\">Mods system</a> to allow community based enhancements",
         "Added several new API endpoints for laps, segments, streams, etc",
         "Added countless fun and exciting bugs for you to find and tell me about on discord",
         "<a href=\"https://www.youtube.com/watch?v=KOO5S4vxi0o\" external target=\"_blank\">Added extra push over the cliff</a>",
@@ -124,5 +124,22 @@
         "Fixed support for legacy browsers and vMix",
         "Fixed various window resource issues for long running sessions",
         "Fixed immediate update of theme in settings windows"
+    ]
+}, {
+    "version": "0.11.1",
+    "ts": 1670070792691,
+    "notes": [
+        "Reverted speed fields to show decimal value",
+        {
+            "html": "Added window profile system",
+            "children": [
+                "A profile encapsulates a group of windows including their placement, size and settings",
+                "Each profile can be named, duplicated, exported and imported"
+            ]
+        },
+        "Added requirement for Mods to be enabled manually for security",
+        "Improved sandboxing of Mods for improved security and compatibility",
+        "Added support for unique zoom setting for windows of same type",
+        "Added various security patches"
     ]
 }]

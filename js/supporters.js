@@ -1,6 +1,6 @@
 (function() {
     const patrons = (async function() {
-        const uri = location.protocol === 'file:' ? 'https://saucellc.io/' : '/';
+        const uri = location.protocol === 'file:' ? 'https://sauce.llc/' : '/';
         const [brags, supporters] = await Promise.all([
             fetch(uri + 'brags.json').then(x => x.json()),
             fetch(uri + 'supporters-v2.json').then(x => x.json())

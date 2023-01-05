@@ -142,4 +142,13 @@
         "Added support for unique zoom setting for windows of same type",
         "Added various security patches"
     ]
+}, {
+    "version": "0.12.0",
+    "ts": 1672959279423,
+    "notes": [
+        "Added Time in Power Zones to Watching window",
+        "Added draft and cadence fields to Overview window",
+        "Added lap fields for power, speed, heart rate, draft and cadence to Overview window",
+        "Fixed lap based fields in Nearby window"
+    ]
 }]

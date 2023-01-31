@@ -151,4 +151,16 @@
         "Added lap fields for power, speed, heart rate, draft and cadence to Overview window",
         "Fixed lap based fields in Nearby window"
     ]
+}, {
+    "private": true,
+    "version": "0.13.0",
+    "ts": 2072959279423,
+    "notes": [
+        "Added Map and Profile window",
+        "Added column layout option to Watching window",
+        "Added several new fields to various windows",
+        "Added prompt to enable newly detected Mods on startup",
+        "Fixed active profile not getting saved",
+        "Fixed bug for windows that would not display updates sometimes"
+    ]
 }]

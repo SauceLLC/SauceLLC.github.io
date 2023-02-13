@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+import hashlib
+import json
+import os
+import os.path
+import shellish
+import csv
+import re
+import subprocess
+
+project_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
+
+
+def is_email(x):
+    return re.match(r"^\S+@\S+\.\S+$", x)
+
+
+@shellish.autocommand
+def addsupporters(members_csv):
+    with open(members_csv, newline='') as f:
+        data = reversed(list(csv.reader(f))[1:])
+        members = dict((x[21], x[0]) for x in data)
+    supporters = os.path.join(project_root, 'supporters-v2.json')
+    with open(supporters) as f:
+        patrons = json.load(f)
+    by_id = dict((x.get('id'), x) for x in patrons)
+    by_names = dict((x.get('name'), x) for x in patrons)
+    for pid, name in members.items():
+        idhash = hashlib.sha256(pid.encode()).hexdigest()[10:22]
+        if idhash in by_id:
+            ent = by_id[idhash]
+            if name != ent['name'] and not ent.get('nameLock'):
+                print("Update name:", idhash, ent['name'], '->', name)
+                ent['name'] = name
+        elif name in by_names:
+            print("Update ID:", idhash, name)
+            by_names[name]['id'] = idhash
+        else:
+            print("New Member:", idhash, name)
+            patrons.append({
+                "id": idhash,
+                "name": name
+            })
+    for x in patrons:
+        if 'id' not in x and not x.get('legend'):
+            print("Not a member anymore:", x)
+        if is_email(x['name']):
+            print("Email detected:", x['name'])
+            x['name'] = input("Enter a safe name: ")
+            x['nameLock'] = True
+    p = subprocess.Popen(['jsoncompact'], stdout=subprocess.PIPE, stdin=subprocess.PIPE, universal_newlines=True)
+    compact_json = p.communicate(input=json.dumps(patrons, sort_keys=True))[0]
+    supporters = os.path.join(project_root, 'supporters-v3.json') # XXX
+    with open(supporters, 'w') as f:
+        f.write(compact_json)
+    if input('Commit? [yes]/no: ') in ('yes', ''):
+        os.system(f'cd {project_root}; git commit supporters-v2.json && git push')
+
+addsupporters()

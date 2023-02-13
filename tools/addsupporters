@@ -50,7 +50,6 @@ def addsupporters(members_csv):
             x['nameLock'] = True
     p = subprocess.Popen(['jsoncompact'], stdout=subprocess.PIPE, stdin=subprocess.PIPE, universal_newlines=True)
     compact_json = p.communicate(input=json.dumps(patrons, sort_keys=True))[0]
-    supporters = os.path.join(project_root, 'supporters-v3.json') # XXX
     with open(supporters, 'w') as f:
         f.write(compact_json)
     if input('Commit? [yes]/no: ') in ('yes', ''):

@@ -156,9 +156,14 @@
     "version": "0.13.0",
     "ts": 2072959279423,
     "notes": [
-        "Added Map and Profile window",
-        "Added column layout option to Watching window",
+        "Added Map (with elevation profile) window",
+        "Added Grade field",
+        "Added hide-header option to Nearby window",
+        "Added column ordering to Nearby window",
+        "Added horizontal layout option to Groups window",
+        "Added horizontal layout option to Watching window",
         "Added several new fields to various windows",
+        "Added prompt to enable newly detected Mods on startup",
         "Added prompt to enable newly detected Mods on startup",
         "Fixed active profile not getting saved",
         "Fixed bug for windows that would not display updates sometimes"

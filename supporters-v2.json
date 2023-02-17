@@ -213,5 +213,6 @@
     {"id": "58d76587d02e", "name": "Super Uper Spidey"},
     {"id": "b1b7ebe60943", "name": "Amber Gest"},
     {"id": "da66ff1e8aa1", "name": "henk koonstra"},
-    {"id": "b74554a8e7bd", "name": "Scott Staubach"}
+    {"id": "b74554a8e7bd", "name": "Scott Staubach"},
+    {"legend": true, "name": "@LindeEcykling", "url": "https://www.twitch.tv/lindeecykling"}
 ]

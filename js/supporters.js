@@ -22,15 +22,6 @@
         return data;
     }
 
-    function hash(str) {
-        let hash = 0;
-        for (let i = 0; i < str.length; i++) {
-            hash = ((hash << 5) - hash) + str.charCodeAt(i);
-            hash |= 0;
-        }
-        return hash;
-    }
-
     async function onDOMLoaded() {
         const orders = [];
         const {brags, supporters} = await patrons;

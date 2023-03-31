@@ -152,12 +152,11 @@
         "Fixed lap based fields in Nearby window"
     ]
 }, {
-    "private": true,
     "version": "0.13.0",
-    "ts": 2072959279423,
+    "ts": 1680301612584,
     "notes": [
         "Added Map (with elevation profile) window",
-        "Added Grade field",
+        "Added Grade (road slope) field",
         "Added hide-header option to Nearby window",
         "Added column ordering to Nearby window",
         "Added horizontal layout option to Groups window",
@@ -168,4 +167,9 @@
         "Fixed active profile not getting saved",
         "Fixed bug for windows that would not display updates sometimes"
     ]
+}, {
+    "private": true,
+    "version": "1.0.0",
+    "ts": 9999999999999,
+    "notes": []
 }]

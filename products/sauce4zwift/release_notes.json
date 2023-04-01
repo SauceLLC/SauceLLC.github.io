@@ -163,7 +163,6 @@
         "Added horizontal layout option to Watching window",
         "Added several new fields to various windows",
         "Added prompt to enable newly detected Mods on startup",
-        "Added prompt to enable newly detected Mods on startup",
         "Fixed active profile not getting saved",
         "Fixed bug for windows that would not display updates sometimes"
     ]

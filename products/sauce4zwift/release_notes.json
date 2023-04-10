@@ -171,6 +171,7 @@
     "version": "1.0.0",
     "ts": 9999999999999,
     "notes": [
-        "Draft units are now in watts (confirmed by Zwift HQ)"
+        "Changed draft units to watts (confirmed by Zwift HQ)",
+        "Added beta and alpha update channels"
     ]
 }]

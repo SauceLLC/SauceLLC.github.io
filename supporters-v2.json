@@ -256,5 +256,10 @@
     {"id": "5a425779e474", "name": "Human Bean"},
     {"id": "4c5c973d1dc0", "name": "Tim Bernier", "url": "https://www.strava.com/athletes/timothy_bernier"},
     {"id": "614edbfc6597", "name": "Brian Bigley"},
-    {"id": "7f264fad1e3d", "name": "Lani Lanai"}
+    {"id": "7f264fad1e3d", "name": "Lani Lanai"},
+    {
+        "legend": true,
+        "name": "NorCal Cycling",
+        "url": "https://www.youtube.com/channel/UCIfRR1N2Gm1vjj9X955iWSQ"
+    }
 ]

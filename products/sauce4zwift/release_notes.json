@@ -179,6 +179,7 @@
         "Added beta and alpha update channels",
         "Added special Pacer Bot styling to Map window",
         "Added custom elevation profile height option for Map window",
+        "Added Elevation Profile as field option for Watching window",
         "Fixed W\'bal accuracy",
         "Fixed \"Enable GPU\" setting regression",
         "Fixed Events window sorting and filtering for long sessions",

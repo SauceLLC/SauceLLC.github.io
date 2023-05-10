@@ -49,7 +49,7 @@
         "name": "Alacrity Endurance",
         "url": "https://www.youtube.com/channel/UC2Xe4xhaXBF2IUE1tAdtwjg"
     },
-    {"id": "88fa80ae95bd", "name": "Justin Kaplan"},
+    {"id": "88fa80ae95bd", "name": "justin kaplan"},
     {"id": "29ce9771ee02", "legend": true, "name": "Nick Stielau"},
     {"id": "86395e7feda7", "legend": true, "name": "Rupert Lewis"},
     {"id": "9a9e52ba65d0", "legend": true, "name": "Alien King"},
@@ -265,5 +265,22 @@
         "legend": true,
         "name": "NorCal Cycling",
         "url": "https://www.youtube.com/channel/UCIfRR1N2Gm1vjj9X955iWSQ"
-    }
+    },
+    {"id": "adfe80349c48", "name": "Tim O'Neill"},
+    {"id": "9715520ce7a1", "name": "Freddie Hick"},
+    {"id": "95ac617d108a", "name": "Jason Spears"},
+    {"id": "052873392cc2", "name": "David Dodd"},
+    {"id": "7fef6670c88c", "name": "Eric Wohnig"},
+    {"id": "ce6bb4a27e71", "name": "heath "},
+    {"id": "183ffafb12c0", "name": "Nic Price"},
+    {"id": "ca068f9c9d04", "name": "Pelekub"},
+    {"id": "e12675041eb9", "name": "佳俊 周"},
+    {"id": "21775ec177ca", "name": "mntbikeracer"},
+    {"id": "cd2c3aadf889", "name": "Alex Hasselkuss"},
+    {"id": "f863e9c9b096", "name": "Ben Price"},
+    {"id": "5cb08b0a652f", "name": "Alex Asher"},
+    {"id": "1a2ac894026a", "name": "X X"},
+    {"id": "af2fe37b53d8", "name": "Ben Hack"},
+    {"id": "3a69c4c723a2", "name": "Djoxx Thecure"},
+    {"id": "2c3efe41b03f", "name": "Ka Lun Chan"}
 ]

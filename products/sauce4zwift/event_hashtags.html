@@ -14,9 +14,21 @@
         <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
         <style>
             main {
-                padding: 0 2em;
+                padding: 0 2rem;
                 font-size: 1.2em;
                 max-width: 100ch;
+            }
+
+            body > footer {
+                font-size: 1em;
+            }
+
+            body > footer > ul {
+                max-width: 80ch;
+            }
+
+            body > footer > ul li:focus {
+                outline: 1px solid white;
             }
 
             .scrollable {
@@ -121,13 +133,15 @@
             </section>
         </main>
 
-        <footer>
-            <p id="tp">
-                Normalized Power®, NP®, Training Stress Score®, TSS®,
-                Intensity Factor®, IF® are trademarks of TrainingPeaks, LLC and are used with permission.
-                <br/><br/>
-                Learn more at <a href="https://www.trainingpeaks.com">https://www.trainingpeaks.com</a>.
-            </p>
+        <footer class="nosticky">
+            <ul>
+                <li id="tp" tabindex="0">
+                    Normalized Power®, NP®, Training Stress Score®, TSS®,
+                    Intensity Factor®, IF® are trademarks of TrainingPeaks, LLC and are used with permission.
+                    <br/><br/>
+                    Learn more at <a href="https://www.trainingpeaks.com">https://www.trainingpeaks.com</a>.
+                </li>
+            </ul>
         </footer>
     </body>
 </html>

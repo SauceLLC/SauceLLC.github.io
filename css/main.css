@@ -8,8 +8,8 @@ html:not(.edge-browser) .edge-only {
     display: none;
 }
 
-html.fastscroll {
-    scroll-behavior: auto;
+html {
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -31,6 +31,10 @@ a:link, a:visited {
 a:hover {
     color: #ff4400;
     text-decoration: underline;
+}
+
+[tabindex]:focus {
+    outline: 2px solid #ff4400e0;
 }
 
 .hidden {

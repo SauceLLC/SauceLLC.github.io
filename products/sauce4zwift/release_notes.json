@@ -176,6 +176,7 @@
         "Changed/Fixed the Zwift API used for Events to be more reliable",
         "Changed W'bal to not reset",
         "Changed Watching window to save/restore the last used screen",
+        "Added route based elevation profiles support",
         "Added beta and alpha update channels",
         "Added special Pacer Bot styling to Map window",
         "Added custom elevation profile height option for Map window",

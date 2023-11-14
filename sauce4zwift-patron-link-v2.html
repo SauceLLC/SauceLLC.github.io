@@ -4,17 +4,17 @@
         <meta charset="utf-8"/>
         <title>Patreon Link Processor - Sauce for Zwift™</title>
         <script type="text/javascript">
-            // This page must be run in an electron context as the renderer process
-            // handles the fulfillment.
-            const q = new URLSearchParams(location.search);
-            location.assign(`sauce4zwift://patron/link?${q}`);
+            setTimeout(() => {
+                const q = new URLSearchParams(location.search);
+                location.assign(`sauce4zwift://patron/link?${q}`);
+                window.close();
+            }, 2000);
         </script>
         <style>
             html, body {
                 margin: 0;
                 width: 100%;
                 height: 100%;
-
             }
             html {
                 box-sizing: border-box;
@@ -64,5 +64,6 @@
     </head>
     <body>
         <img src="images/logo_vert_120x320.png" class="logo"/><h3>Communicating with the mother ship...</h3>
+        <b>You can safely close this window.</b>
     </body>
 </html>

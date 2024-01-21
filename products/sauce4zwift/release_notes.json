@@ -195,7 +195,7 @@
     "ts": 1705807954703,
     "notes": [
         {
-            "html": "Changed field change behavior from click to long-press",
+            "html": "Changed data field editing trigger from a click to long-press",
             "children": [
                 "Clicking a mutable field now requires a long-press of the mouse button or touch device",
                 "Following a long-press a drop-down menu is presented with all the field options",

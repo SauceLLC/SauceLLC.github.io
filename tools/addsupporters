@@ -18,8 +18,9 @@ def is_email(x):
 @shellish.autocommand
 def addsupporters(members_csv):
     with open(members_csv, newline='') as f:
-        data = reversed(list(csv.reader(f))[1:])
-        members = dict((x[21], x[0]) for x in data)
+        data = list(reversed(list(csv.reader(f))))
+        fields = data.pop()
+        members = dict((x[fields.index('User ID')], x[fields.index('Name')]) for x in data)
     supporters = os.path.join(project_root, 'supporters-v2.json')
     with open(supporters) as f:
         patrons = json.load(f)

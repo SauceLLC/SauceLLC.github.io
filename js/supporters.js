@@ -43,7 +43,7 @@
             }
             const brag = document.createElement('div');
             brag.classList.add('brag');
-            brag.textContent = brags[i % brags.length];
+            brag.textContent = sup.quip || brags[i % brags.length];
             patron.appendChild(brag);
             frag.appendChild(patron);
         }

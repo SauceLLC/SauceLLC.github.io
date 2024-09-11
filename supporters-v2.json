@@ -362,5 +362,10 @@
     {"id": "469cc3fc7c7f", "name": "Tyrome "},
     {"id": "3655da90d6d3", "name": "Ebba Magnusson"},
     {"id": "6e7a154f1dcd", "name": "##"},
-    {"id": "8dbd37f5418f", "name": "Matthew Ryan"}
+    {"id": "8dbd37f5418f", "name": "Matthew Ryan"},
+    {
+        "legend": true,
+        "name": "Boise Gravel Gala",
+        "url": "https://www.boisegravelgala.com"
+    }
 ]

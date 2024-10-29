@@ -108,7 +108,7 @@
         "Added Auto reset/lap option for events",
         "Added Auto lap option based on custom time or distance",
         "Added follow-back status in Athletes window with card earmarks",
-        "Added support for <a href=\"https://sauce.llc/products/sauce4zwift/event_hashtags.html\" external target=\"_blank\">#hashtag based data culling in events</a>",
+        "Added support for <a href=\"https://www.sauce.llc/products/sauce4zwift/event_hashtags.html\" external target=\"_blank\">#hashtag based data culling in events</a>",
         "Added cadence gauge",
         "Added theme support and color override to gauges",
         "Added reverse order chat option",

@@ -42,7 +42,7 @@
         }
     }
 
-    const supP = fetch('https://sauce.llc/supporters-v2.json').then(x => x.json());
+    const supP = fetch('https://www.sauce.llc/supporters-v2.json').then(x => x.json());
     addEventListener('DOMContentLoaded', onDOMLoaded);
     addEventListener('load', onLoad);
 })();

@@ -1,6 +1,6 @@
 (function() {
     const notesPromise = (async function() {
-        const uri = location.protocol === 'file:' ? 'https://sauce.llc/' : '/';
+        const uri = location.protocol === 'file:' ? 'https://www.sauce.llc/' : '/';
         return await fetch(uri + 'release_notes.json').then(x => x.json());
     })();
 

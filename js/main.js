@@ -5,7 +5,7 @@
         const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         const browser = isFirefox ? 'firefox' : isSafari ? 'safari' : 'chrome';
         if (isEdge) {
-            document.documentElement.addClass('edge-browser');
+            document.documentElement.classList.add('edge-browser');
         }
         const installLink = document.querySelector(`a.store-install.${browser}`);
         installLink.classList.remove('hidden');

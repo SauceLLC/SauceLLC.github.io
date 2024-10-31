@@ -298,4 +298,27 @@
             ]
         }
     ]
+}, {
+    "version": "8.5.0",
+    "ts": 1727308800000,
+    "notes": [
+        "Ported to V3 manifest extension standard"
+    ]
+}, {
+    "version": "8.6.0",
+    "ts": 1729728000000,
+    "notes": [
+        {
+            "html": "Sauce Performance updates",
+            "children": [
+                "Added elevation gain category to Activity Stats chart",
+                "Enhanced Activities Table with configurable columns",
+                "Added Peak performance column options to Activities Table",
+                "Added display of photos and videos in Activity Details",
+                "Added ability to override TSS® from an Analysis page"
+            ]
+        },
+        "Revised display of TSS® based fields to indicate if they are estimated, manual, heart-rate or power based",
+        "Added more custom font choices"
+    ]
 }]

@@ -321,4 +321,10 @@
         "Revised display of TSS® based fields to indicate if they are estimated, manual, heart-rate or power based",
         "Added more custom font choices"
     ]
+}, {
+    "version": "8.7.1",
+    "ts": 1731051166006,
+    "notes": [
+        "Per sport FTP setting in Sauce Performance"
+    ]
 }]

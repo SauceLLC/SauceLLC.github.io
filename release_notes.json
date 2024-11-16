@@ -327,4 +327,10 @@
     "notes": [
         "Per sport FTP setting in Sauce Performance"
     ]
+}, {
+    "version": "8.7.3",
+    "ts": 1731783575955,
+    "notes": [
+        "Fix dashboard filters and kudo-all (upstream change)"
+    ]
 }]

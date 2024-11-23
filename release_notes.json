@@ -333,4 +333,10 @@
     "notes": [
         "Fix dashboard filters and kudo-all (upstream change)"
     ]
+}, {
+    "version": "8.7.4",
+    "ts": 1732327104260,
+    "notes": [
+        "Playing Whac-A-Mole with unseen forces at Strava HQ! -or- Fixing dashboard filters and kudo-all (yet again)"
+    ]
 }]

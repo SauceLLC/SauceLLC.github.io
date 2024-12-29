@@ -339,4 +339,17 @@
     "notes": [
         "Playing Whac-A-Mole with unseen forces at Strava HQ! -or- Fixing dashboard filters and kudo-all (yet again)"
     ]
+}, {
+    "version": "8.8.0",
+    "ts": 1735500139584,
+    "notes": [
+        {
+            "html": "Remove the kudo-all button",
+            "children": [
+                "Ethically conflicted",
+                "Too many negative support interactions"
+            ]
+        },
+        "Remove broken Trailforks integration"
+    ]
 }]

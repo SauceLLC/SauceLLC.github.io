@@ -340,7 +340,7 @@
         "Playing Whac-A-Mole with unseen forces at Strava HQ! -or- Fixing dashboard filters and kudo-all (yet again)"
     ]
 }, {
-    "version": "8.8.0",
+    "version": "8.7.8",
     "ts": 1735500139584,
     "notes": [
         {
@@ -351,5 +351,11 @@
             ]
         },
         "Remove broken Trailforks integration"
+}, {
+    "version": "8.8.0",
+    "ts": 1748308479340,
+    "notes": [
+        "Add My-Results filter option to the Activity page\'s segment efforts",
+        "Add option to show more segment results on the Activity page"
     ]
 }]

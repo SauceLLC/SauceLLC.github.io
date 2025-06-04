@@ -351,11 +351,12 @@
             ]
         },
         "Remove broken Trailforks integration"
+    ]
 }, {
     "version": "8.8.0",
     "ts": 1748308479340,
     "notes": [
-        "Add My-Results filter option to the Activity page\'s segment efforts",
+        "Add My-Results filter option to the Activity page's segment efforts",
         "Add option to show more segment results on the Activity page"
     ]
 }]

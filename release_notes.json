@@ -359,4 +359,16 @@
         "Add My-Results filter option to the Activity page's segment efforts",
         "Add option to show more segment results on the Activity page"
     ]
+}, {
+    "version": "8.9.0",
+    "ts": 1749407025159,
+    "notes": [
+        {
+            "html": "Sauce Performance",
+            "children": [
+                "Fix sync rate-limiter regression (suspended sync jobs)",
+                "Add option to <a href=\"https://youtu.be/tQl7gGgo2Ak\">synchronize settings between multiple devices</a>"
+            ]
+        }
+    ]
 }]

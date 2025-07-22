@@ -15,36 +15,40 @@ def is_email(x):
     return re.match(r"^\S+@\S+\.\S+$", x)
 
 
+def idhash(x):
+    return hashlib.sha256(x.encode()).hexdigest()[10:22]
+
+
 @shellish.autocommand
 def addsupporters(members_csv):
     with open(members_csv, newline='') as f:
         data = list(reversed(list(csv.reader(f))))
         fields = data.pop()
-        members = dict((x[fields.index('User ID')], x[fields.index('Name')]) for x in data)
+        members = dict((idhash(x[fields.index('User ID')]), x[fields.index('Name')]) for x in data)
     supporters = os.path.join(project_root, 'supporters-v2.json')
     with open(supporters) as f:
         patrons = json.load(f)
     by_id = dict((x.get('id'), x) for x in patrons)
     by_names = dict((x.get('name'), x) for x in patrons)
-    for pid, name in members.items():
-        idhash = hashlib.sha256(pid.encode()).hexdigest()[10:22]
-        if idhash in by_id:
-            ent = by_id[idhash]
+    for id, name in members.items():
+        if id in by_id:
+            ent = by_id[id]
             if name != ent['name'] and not ent.get('nameLock'):
-                print("Update name:", idhash, ent['name'], '->', name)
+                print("Update name:", id, ent['name'], '->', name)
                 ent['name'] = name
         elif name in by_names:
-            print("Update ID:", idhash, name)
-            by_names[name]['id'] = idhash
+            print("Update ID:", id, name)
+            by_names[name]['id'] = id
         else:
-            print("New Member:", idhash, name)
+            print("New Member:", id, name)
             patrons.append({
-                "id": idhash,
+                "id": id,
                 "name": name
             })
-    for x in patrons:
-        if 'id' not in x and not x.get('legend'):
+    for x in list(patrons):
+        if not x.get('legend') and ('id' not in x or x['id'] not in members):
             print("Not a member anymore:", x)
+            patrons.remove(x)
         if is_email(x['name']):
             print("Email detected:", x['name'])
             x['name'] = input("Enter a safe name: ")

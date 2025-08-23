@@ -371,4 +371,12 @@
             ]
         }
     ]
+}, {
+    "version": "8.9.3",
+    "ts": 1755918125859,
+    "notes": [
+        "Fix occasional blank page for Run Analysis page loads",
+        "Bug fixes and improvements for Sauce Performance multi-device settings sync",
+        "Fix (data) streams and segments caching regression (upstream change)"
+    ]
 }]

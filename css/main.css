@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker');
+
 html {
     box-sizing: border-box;
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 html:not(.edge-browser) .edge-only {
@@ -17,15 +20,15 @@ html {
 }
 
 body {
-    background: #222;
+    background: #1b0606;
     color: #f0f0f0;
     margin: 0;
 }
 
 a:link, a:visited {
-    color: #ff4400e0;
+    color: #ff4b2af2;
     text-decoration: none;
-    transition: color 200ms, text-decoration 200ms;
+    transition: color 140ms;
 }
 
 a:hover {
@@ -43,6 +46,7 @@ a:hover {
 
 body > #nav {
     background: #333 !important;
+    background-image: linear-gradient(135deg, #470000, #200053) !important;
     box-shadow: 0 1px 5px 0 #000b;
     margin-bottom: 3em;
 }
@@ -97,11 +101,16 @@ body > #nav > nav .left {
 }
 
 body > #nav > nav .left > * {
-    margin-right: 2em;
+    margin-right: 1em;
 }
 
 body > #nav > nav .left a {
     font-size: 1.5em;
+    color: #fffe;
+
+    &:hover {
+        color: #f97f;
+    }
 }
 
 img.branding {
@@ -158,12 +167,12 @@ section {
 
 section.right {
     align-items: flex-end;
-    padding-right: 5%;
+    padding-right: 3em;
 }
 
 section.left {
     align-items: flex-start;
-    padding-left: 5%;
+    padding-left: 3em;
 }
 
 
@@ -172,15 +181,18 @@ header.intro {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    padding: 2em 2.6em;
     position: absolute;
     z-index: 20;
-    margin-top: 8em;
+    margin-top: 2em;
     right: 3em;
     width: 34em;
     border-radius: 0.4em;
-    opacity: 0.98;
-    box-shadow: 1px 1px 5px 0 #0005;
+    box-shadow: 1px 1px 5px 1px #0009;
+
+    .caption {
+        margin-bottom: 0;
+    }
 }
 
 header.intro.left {
@@ -209,7 +221,7 @@ card .visual {
 }
 
 huge {
-    font-size: 4em;
+    font-size: 3.2em;
     font-family: 'Permanent Marker', sans-serif;
 }
 
@@ -218,27 +230,50 @@ big {
 }
 
 header.intro {
-    background-color: #008659;
+    background-color: #bf0505db;
 }
 
 header.intro#features {
-    background-color: #008659;
+    background-color: #3c16ceb8;
 }
 
-header.intro#about {
-    background-color: #bf594a;
+header.intro#users {
+    background-color: #ffff08d1;
+    color: #222;
+
+    .caption {
+        color: #555;
+    }
 }
 
 header.intro#patron {
-    background-color: #541aa3;
+    background-color: #3c16ceb8;
+
+    a.patron {
+        margin-top: 1em;
+        img {
+            transition: box-shadow: 200ms;
+        }
+
+        &:hover img {
+            animation: pumpitup 400ms 2;
+            box-shadow: 1px 1px 3px 0 #0009;
+        }
+    }
 }
 
-header.intro#support {
-    background-color: #0d7bae;
+@keyframes pumpitup {
+    0% {scale: 1;}
+    30% {scale: 1.2;}
+    100% {scale: 1;}
 }
 
-header.intro#intro {
-    background-color: #862200;
+header.intro#about {
+    background-color: #008641c7;
+}
+
+header.intro#contact {
+    background-color: #0d7baecc;
 }
 
 #patron a.patron {
@@ -255,8 +290,29 @@ header.intro#intro {
     box-shadow: 1px 1px 5px 0 #0003;
 }
 
-card iframe.strava-club {
-    max-height: 80vh !important;
+card.intro-video {
+    max-width: 60%;
+    margin-top: 8em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    iframe.visual {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+card .strava-club {
+    max-width: 100%;
+
+    img {
+        max-height: 80vh !important;
+        object-fit: contain;
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 a.top {
@@ -309,10 +365,6 @@ body> footer .install-link img {
         margin-bottom: 0;
     }
 
-    header.intro {
-        margin-top: 0;
-    }
-
     #nav nav .left > a:not(.logo) {
         display: none;
     }
@@ -326,15 +378,30 @@ body> footer .install-link img {
     }
 
     header.intro {
-        position: sticky;
+        margin-top: 0;
         width: 100%;
         border-radius: 0;
         font-size: 0.6em;
+        left: 0 !important;
+        right: 0 !important;
+
+        huge {
+            text-align: center;
+        }
+
+        .caption {
+            font-size: 2em;
+            margin: 0.4em 0.2em 0;
+        }
     }
 
     body > section p {
         max-width: initial;
         padding: 0em 1em;
+    }
+
+    card.intro-video {
+        max-width: 100%;
     }
 
     card .visual {

@@ -20,8 +20,6 @@
                 if (page === 'top') {
                     page = '/'; 
                 }
-                ga('set', {page});
-                ga('send', 'pageview');
                 if (window.history && history.pushState) {
                     history.pushState(null, null, page);
                     document.querySelector(ev.currentTarget.hash).scrollIntoView();

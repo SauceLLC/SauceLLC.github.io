@@ -9,8 +9,8 @@
 
         <title>Sauce for Strava™ - Release Notes</title>
 
-        <link id="favicon" rel="shortcut icon" href="../../images/favicon.webp"/>
-        <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+        <link id="favicon" rel="shortcut icon" href="/images/favicon.webp"/>
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
         <style>
             main {
                 padding: 1em 2em;
@@ -25,7 +25,7 @@
                 font-size: 1.4em;
                 justify-content: space-between;
                 font-variant: tabular-nums;
-                color: #ff4400e0;
+                font-weight: 600;
             }
 
             release {
@@ -33,6 +33,10 @@
                 font-size: 1.2em;
                 padding: 1.2rem;
                 width: min(max(70%, 40ch), 100%);
+            }
+
+            release:not(:last-of-type) {
+                border-bottom: 1px solid #eee3;
             }
 
             #nav nav {
@@ -46,9 +50,10 @@
 
             #nav .center {
                 height: initial;
-                font-size: 2em;
+                font-size: 1.6em;
                 flex: 1 1 auto;
-                color: #ff4400e0;
+                display: flex;
+                align-items: center;
             }
         </style>
 
@@ -59,11 +64,9 @@
         <header id="nav" class="nosticky">
             <nav>
                 <div class="left">
-                    <a class="anchor logo" href="/index.html"><img class="branding" src="../../images/logo_horiz_320x120.webp"/></a>
+                    <a class="anchor logo" href="/index.html"><img class="branding" src="/images/logo_horiz_320x120.webp"/></a>
                 </div>
-                <div class="center">
-                    Release Notes<br/>
-                </div>
+                <div class="center">Sauce for Zwift™ - Release Notes</div>
             </nav>
         </header>
 

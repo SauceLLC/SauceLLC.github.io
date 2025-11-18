@@ -2,34 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
     <loc>https://www.sauce.llc/</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2025-11-15</lastmod>
   </url>
   <url>
-    <loc>https://www.sauce.llc/intro</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.sauce.llc/products</loc>
+    <lastmod>2025-11-15</lastmod>
   </url>
   <url>
-    <loc>https://www.sauce.llc/features</loc>
-    <lastmod>2025-01-18</lastmod>
-  </url>
-  <url>
-    <loc>https://www.sauce.llc/about</loc>
-    <lastmod>2025-01-18</lastmod>
+    <loc>https://www.sauce.llc/history</loc>
+    <lastmod>2025-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.sauce.llc/patron</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2025-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.sauce.llc/contact</loc>
-    <lastmod>2025-01-18</lastmod>
-  </url>
-  <url>
-    <loc>https://www.sauce.llc/support</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2025-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.sauce.llc/supporters</loc>
-    <lastmod>2025-01-18</lastmod>
+    <lastmod>2025-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.sauce.llc/products/sauce4strava</loc>
+    <lastmod>2025-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.sauce.llc/products/sauce4zwift</loc>
+    <lastmod>2025-11-15</lastmod>
   </url>
 </urlset>

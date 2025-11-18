@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="description" content="Sauce for Strava™ is a browser extension that upgrades Strava with more stats, features and layouts.  It's lightweight and easy to use."/>
+
+        <title>Sauce for Strava™ - A browser extension for Strava</title>
+
+        <link rel="manifest" href="/manifest.json"/>
+        <link id="favicon" rel="shortcut icon" href="/images/favicon.webp"/>
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://www.sauce.llc",
+                "logo": "https://www.sauce.llc/images/logo_vert_240x640.webp"
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "Sauce for Strava™",
+                "browserRequirements": "Chrome, Firefox, Edge, Opera or Safari",
+                "applicationCategory": "BrowserApplication",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.72",
+                    "ratingCount": "55"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0"
+                },
+                "installUrl": "https://chrome.google.com/webstore/detail/eigiefcapdcdmncdghkeahgfmnobigha",
+                "screenshot": "https://www.sauce.llc/products/sauce4strava/images/promotile.webp"
+            }
+        </script>
+
+        <script defer type="text/javascript" src="/js/common.js"></script>
+        <script defer type="text/javascript" src="/js/sauce4strava.js"></script>
+    </head>
+
+    <body id="top">
+        <header id="nav">
+            <nav>
+                <div class="left">
+                    <a class="anchor logo" href="/"><img class="branding" src="/images/logo_horiz_320x120.webp"/></a>
+                    <a class="anchor" href="/products">Products</a>
+                    <a class="anchor" href="/history">History</a>
+                    <a class="anchor" href="/patron">Patron</a>
+                    <a class="anchor" href="/contact">Contact</a>
+                    <a class="" href="/supporters">Supporters</a>
+                </div>
+                <div class="right">
+                    <a class="social" href="https://github.com/SauceLLC/sauce4strava"
+                       target="_s_external" title="Source code on GitHub"><img src="/images/github.webp"/></a>
+                    <a class="social" href="mailto:support@sauce.llc"
+                       target="_s_external" title="Email for support or questions"><img src="/images/email.webp"/></a>
+                    <a class="social" href="https://www.youtube.com/channel/UCXrFzJ5OxYeuChyQt9-Ku7A"
+                       target="_s_external" title="Sauce Channel on YouTube"><img src="/images/youtube.webp"/></a>
+                    <a class="store-install firefox hidden"
+                       href="https://addons.mozilla.org/addon/sauce4strava"
+                       target="_s_external"><img src="images/get-the-addon.webp"/></a>
+                    <a class="store-install chrome hidden"
+                       href="https://chrome.google.com/webstore/detail/eigiefcapdcdmncdghkeahgfmnobigha"
+                       target="_s_external"><img src="images/ChromeWebStore_BadgeWBorder_v2_496x150.webp"/></a>
+                    <a class="store-install safari hidden"
+                       href="https://apps.apple.com/us/app/sauce-for-strava/id1570922521"
+                       target="_s_external"><img src="images/safari-download.webp"/></a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="intro" class="full right">
+            <card class="intro-video">
+                <bignote class="left about">
+                    <huge>Sauce for <tm>Strava</tm> browser extension</huge>
+                    <h3 class="">Built for Chrome, Firefox, Edge and <strike>IE6</strike> Safari</h3>
+                </bignote>
+                <iframe width="1280" height="720" class="visual" src="https://www.youtube.com/embed/6nR12miKQ98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </card>
+            <h3 class="caption">Walkthrough Video</h3>
+        </section>
+
+        <section id="features" class="full left">
+            <card>
+                <bignote class="features right">
+                    <huge>Let's talk turkey...</huge>
+                    <h3 class="">👈 Just some of what you can expect</h3>
+                </bignote>
+                <img class="visual" src="images/peakpower.webp"/>
+            </card>
+            <h3 class="caption">Find peak power in your rides and runs</h3>
+            <p>
+                In addition to power, there is <a href="#tp">Normalized Power®</a>, xPower, Pace (including GAP), Heart Rate, Cadence and VAM.  If the athlete
+                weight is known a running power estimation is available too!
+            </p>
+        </section>
+
+        <section class="full left">
+            <card>
+                <bignote class="features right bottom">
+                    <big>Deep dive into Peak efforts</big>
+                    <h3 class="">There's actually a gang of turkeys in my neighborhood</h3>
+                </bignote>
+                <img class="visual" src="images/peakinfo.webp"/>
+            </card>
+            <h3 class="caption">Badges for that sweet, sweet dopamine you crave</h3>
+        </section>
+
+        <section class="full right">
+            <card>
+                <bignote class="features left">
+                    <big>Extended selection statistics</big>
+                    <h4 class="">Maybe it's actually a brood of turkeys?  There's quite a few youngsters</h4>
+                </bignote>
+                <img class="visual" src="images/analysis-stats.webp"/>
+            </card>
+            <h3 class="caption">Access to key performance metrics in the Analysis page.</h3>
+            <p>
+                The analysis page is an awesome tool by itself.  Sauce builds on this page by adding unique data fields
+                and giving you access to the raw data values.  For running and swimming activities this page is un-hidden
+                so you can do in-depth analysis regardless of the activity type.
+            </p>
+        </section>
+
+        <section class="full left">
+            <card>
+                <bignote class="features right">
+                    <big>Unfiltered Live Segments</big>
+                    <h4 class="">The turkey was almost the national bird of the United States</h4>
+                </bignote>
+                <img class="visual" src="images/live-segments.webp"/>
+            </card>
+            <h3 class="caption">Create live segment files for Garmin devices.</h3>
+            <p>
+                If you own a Garmin device, you can create your own live segment files
+                based on ANY activity and ANY athlete.  And it even works for downhill segments!
+            </p>
+        </section>
+
+        <section class="full left">
+            <card>
+                <bignote class="features right bottom">
+                    <big>Newtonian Physics!</big>
+                    <h4 class="">I feel like I should mention I don't live on a farm or in the country.  There are just dozens of 
+                    turkeys always mulling about in my well populated neighborhood.</h4>
+                </bignote>
+                <img class="visual" src="images/perf-predictor.webp"/>
+            </card>
+            <h3 class="caption">Full physics analysis of cycling efforts with Perf Predictor.</h3>
+            <p>
+                This is my favorite tool in the kit.  You can analyze any segment or section of an activity and study
+                what power and weight requirements were used to achieve a particular speed.  It works for time trials,
+                hill climbs, and even downhills.  I use this tool to estimate how many watts I'm going to need to
+                increase or how many kilograms I'm going to have to drop to meet my goals.
+            </p>
+        </section>
+
+        <section class="full left">
+            <card>
+                <bignote class="features middle right">
+                    <big>Unix Philosophy Configurability</big>
+                    <h4 class="">My dog Frank thinks they're pretty cool and yes, I'm still on about the turkeys!</h4>
+                </bignote>
+                <img class="visual" src="images/options.webp"/>
+            </card>
+            <h3 class="caption">Options for activities and the dashboard.</h3>
+            <p>Most settings are optional so you can turn on and off whatever you'd like.</p>
+        </section>
+
+        <section class="full left">
+            <card>
+                <bignote class="features right">
+                    <big>Peanut Gallery</big>
+                    <h4 class="">I bet turkeys would love peanuts</h4>
+                </bignote>
+                <img class="visual" src="images/comments.webp"/>
+            </card>
+            <h3 class="caption">Display and submit comments in the activity page.</h3>
+            <p>
+                Most people that install Sauce don't even realize the inline comments weren't done by Strava.  It's
+                otherwise wasted space in the page so why not put it there!?
+            </p>
+        </section>
+
+        <section class="full left">
+            <card>
+                <bignote class="features right">
+                    <big>Export <code>01100100011000010111010001100001</code> like a boss</big>
+                    <h4 class="">Turkey's are not Turkish BTW, <a target="_s_external" href="https://www.rd.com/article/turkey-name-origin/">google it</a></h4>
+                </bignote>
+                <img class="visual" src="images/exports.webp"/>
+            </card>
+            <h3 class="caption">Export to TCX, GPX or FIT.</h3>
+            <p>Sauce adds TCX, GPX and FIT exporting to any activity, not just your own.</p>
+        </section>
+
+        <section class="full right">
+            <card>
+                <bignote class="features left bottom">
+                    <big>Unlock Weight and FTP based stats</big>
+                    <h4 class="">The air speed velocity of an unladen turkey is nearly 89 kmh!</h4>
+                </bignote>
+                <img class="visual" src="images/overview-stats.webp"/>
+            </card>
+            <h3 class="caption">Extra overview stats and settable FTP and weight.</h3>
+            <p>
+                FTP and weight, when available, are visible.  Even when not available you can plug in custom values to activate stats like Watts/kg.
+            </p>
+        </section>
+
+        <section id="users" class="full right">
+            <card>
+                <bignote class="static">
+                    <big>At least 6 people are probably using Sauce right now</big>
+                    <h4 class="">As long as I have one good hand, I can draw a pretty good Turkey</h4>
+                </bignote>
+                <a class="strava-club" target="_s_external"
+                   href="https://www.strava.com/clubs/sauce4strava"><img class="visual" src="/images/strava-club.webp"/></a>
+            </card>
+            <h3 class="caption">Strava Club is open to all</h3>
+        </section>
+
+        <footer>
+            <row>
+                <column>
+                    <b>Copyright 2020-2025 Sauce, LLC</b>
+                    <ul>
+                        <li><a href="mailto:support@sauce.llc" target="_blank">Contact Me</a>
+                        <li><a href="/sauce4strava/pages/privacy">Privacy Policy</a></li>
+                        <li><a href="/release-notes">Release Notes</a></li>
+                        <li>Updated: Nov 15, 2025</li>
+                    </ul>
+                </column>
+                <column>
+                    <b>Social</b>
+                    <ul>
+                        <li><a href="https://www.patreon.com/sauce4strava" target="_s_external">Patreon</a></li>
+                        <li><a href="https://www.github.com/SauceLLC" target="_s_external">GitHub</a></li>
+                        <li><a href="https://www.strava.com/clubs/sauce4strava" target="_s_external">Strava Club</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCXrFzJ5OxYeuChyQt9-Ku7A" target="_s_external">YouTube</a></li>
+                    </ul>
+                </column>
+                <column>
+                    <b>Official Installs</b>
+                    <ul>
+                        <li><a class="install-link"
+                               href="https://chrome.google.com/webstore/detail/eigiefcapdcdmncdghkeahgfmnobigha"
+                               target="_s_external"><img src="images/ChromeWebStore_BadgeWBorder_v2_496x150.webp"/></a></li>
+                        <li><a class="install-link" href="https://addons.mozilla.org/addon/sauce4strava"
+                               target="_s_external"><img src="images/get-the-addon.webp"/></a></li>
+                        <li><a class="install-link safari-download"
+                               href="https://apps.apple.com/us/app/sauce-for-strava/id1570922521"><img src="images/safari-download.webp"/></a></li>
+                    </ul>
+                </column>
+            </row>
+            <row>
+                <p id="tp" tabindex="0">
+                    Normalized Power®, NP®, Training Stress Score®, TSS®, Intensity Factor®, IF® are trademarks of TrainingPeaks, LLC.<br/><br/>
+                    Learn more at <a target="_s_external" href="https://www.trainingpeaks.com/learn/articles/glossary-of-trainingpeaks-metrics/?utm_source=newsletter&utm_medium=partner&utm_term=sauce_trademark&utm_content=cta&utm_campaign=sauce">https://www.trainingpeaks.com/learn/articles/glossary-of-trainingpeaks-metrics</a>
+                </p>
+            </row>
+        </footer>
+
+        <a class="anchor top" href="#top" title="Scroll to top">⬆</a>
+    </body>
+</html>

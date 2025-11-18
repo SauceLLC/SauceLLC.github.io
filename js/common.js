@@ -6,7 +6,6 @@
     document.documentElement.classList.toggle('edge-browser', isEdge);
 
     function onDOMLoaded() {
-
         supP.then(supporters => {
             const randoUpdate = () => {
                 for (const x of document.querySelectorAll('a.supporter-highlight')) {
@@ -57,12 +56,11 @@
     }
 
     function onLoad() {
-        const pages = ['features', 'about', 'patron', 'contact'];
-        for (const x of pages) {
-            if (location.pathname.match(new RegExp(`^\\/${x}(\\.html)?(\\?|$|#)`))) {
-                const anchor = document.querySelector(`#${x}`);
-                anchor.scrollIntoView();
-                break;
+        const jumpTo = location.pathname.match(/\/([^/]+?)(?:\.html)?$/);
+        if (jumpTo) {
+            const anchor = document.getElementById(jumpTo[1]);
+            if (anchor) {
+                requestAnimationFrame(() => anchor.scrollIntoView());
             }
         }
     }

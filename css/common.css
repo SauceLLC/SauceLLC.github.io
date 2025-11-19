@@ -13,19 +13,13 @@
     to {--split: 0.5;}
 }
 
-
-@keyframes shift-header {
-    0% {rotate: -2deg;}
-    10% {rotate: 2deg;}
-    20% {rotate: -2deg;}
-    30% {rotate: 2deg;}
-    40% {rotate: -2deg;}
-    50% {rotate: 2deg;}
-    60% {rotate: -2deg;}
-    70% {rotate: 2deg;}
-    80% {rotate: -2deg;}
-    90% {rotate: 2deg;}
-    100% {rotate: -2deg;}
+@keyframes shift-note {
+    0% {
+        translate: 0 -40%;
+    }
+    100% {
+        translate: 0 80%;
+    }
 }
 
 @keyframes pumpitup {
@@ -44,7 +38,6 @@ html {
 html {
     font-size: 14px;
     font-family: Lato, sans-serif;
-    scroll-timeline: --main-scroll-timeline y;
 }
 
 html:not(.edge-browser) .edge-only {
@@ -175,6 +168,87 @@ a.store-install {
     }
 }
 
+@property --carnival-pos-1 {
+    syntax: "<length-percentage>";
+    initial-value: 0;
+    inherits: true;
+}
+@property --carnival-pos-2 {
+    syntax: "<length-percentage>";
+    initial-value: 0;
+    inherits: true;
+}
+@property --carnival-pos-3 {
+    syntax: "<length-percentage>";
+    initial-value: 0;
+    inherits: true;
+}
+
+@keyframes carnival-arrow {
+    0% {
+        --carnival-pos-1: -100%;
+        --carnival-pos-2: -100%;
+        --carnival-pos-3: 0%;
+    }
+    100% {
+        --carnival-pos-1: 100%;
+        --carnival-pos-2: 200%;
+        --carnival-pos-3: 300%;
+    }
+}
+
+@keyframes reveal-vis {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+.but-wait-theres-more {
+    &::after {
+        content: '❭❭❭❭';
+        position: fixed;
+        z-index: -1;
+        pointer-events: none;
+        left: calc(50% - 0.5em);
+        bottom: 1em;
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: -0.55em;
+        padding: 0.3em 0.1em 0.7em 0.33em;
+        --carnival-color-dim: #05550512;
+        --carnival-color-bright: #96ff00;
+        --shadow-color: #1e14;
+        --shadow-blur: 0.05em;
+        --shadow-h-pad: 0.05em;
+        --shadow-head-pad: 0em;
+        --shadow-tail-pad: -0.10em;
+        filter:
+            drop-shadow(calc(-1 * var(--shadow-h-pad)) var(--shadow-tail-pad) var(--shadow-blur) var(--shadow-color))
+            drop-shadow(var(--shadow-h-pad) var(--shadow-tail-pad) var(--shadow-blur) var(--shadow-color))
+            drop-shadow(calc(-1 * var(--shadow-h-pad)) var(--shadow-head-pad) var(--shadow-blur) var(--shadow-color))
+            drop-shadow(var(--shadow-h-pad) var(--shadow-head-pad) var(--shadow-blur) var(--shadow-color));
+        color: #ffffff00;
+        background-image: linear-gradient(180deg,
+                                          var(--carnival-color-dim) var(--carnival-pos-1),
+                                          var(--carnival-color-bright) var(--carnival-pos-2),
+                                          var(--carnival-color-dim) var(--carnival-pos-3));
+        background-clip: text;
+        writing-mode: vertical-lr;
+        animation: carnival-arrow 3s infinite linear, reveal-vis;
+        animation-timeline: auto, --section-reveal-timeline;
+        opacity: 0;
+    }
+}
+
 section {
     --default-horiz-pad: 3rem;
     --bignote-pad: var(--default-horiz-pad);
@@ -184,6 +258,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 2rem var(--default-horiz-pad);
+    view-timeline: --section-reveal-timeline y;
 
     &.left,
     &.right {
@@ -204,8 +279,9 @@ section {
 
     &.full {
         padding-top: 2rem;
-        padding-bottom: 10rem;
-        min-height: 95vh;
+        padding-bottom: 6rem;
+        margin-bottom: 4rem;
+        min-height: 100vh;
         min-width: 80%;
 
         p, .p {
@@ -215,6 +291,10 @@ section {
             max-width: 60rem;
         }
     }
+}
+
+header#nav + section.full {
+    padding-bottom: 8rem;
 }
 
 bignote {
@@ -231,8 +311,10 @@ bignote {
     border-radius: 0.4rem;
     background-color: #bf0505db;
     box-shadow: 1px 1px 5px 0 #0006;
-    animation: shift-header;
-    animation-timeline: --main-scroll-timeline;
+    animation: shift-note;
+    animation-range: 0% 180%;
+    animation-fill-mode: both;
+    animation-timeline: --section-reveal-timeline;
     right: calc(-1 * var(--bignote-pad, 0rem));
 
     &.left {
@@ -262,6 +344,7 @@ bignote {
 
     &.static {
         position: static;
+        animation: none;
     }
 
     &.features {
@@ -654,6 +737,7 @@ body > footer .install-link img {
         font-size: 0.7em;
         position: relative !important;
         inset: initial !important;
+        animation: none;
 
         .caption {
             font-size: 2em;

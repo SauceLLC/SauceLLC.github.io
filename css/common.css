@@ -407,7 +407,7 @@ bignote {
 }
 
 .caption {
-    margin: 0.2rem 0.2rem 1.2rem;
+    margin: 0.2rem 0.5rem 1.2rem;
     color: #ddd;
     font-variant: all-petite-caps;
 }
@@ -467,16 +467,16 @@ big {
 }
 
 .image-compare {
-    display: flex;
     position: relative;
     max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
-    border-radius: 0.28rem;
     --split: 0.5;
 
     img {
-        height: 100%;
+        display: block;
         max-width: 100%;
+        max-height: 100%;
         object-fit: contain;
 
         &:first-of-type {
@@ -556,9 +556,12 @@ big {
     }
 }
 
-#products {
+
+#product-choices {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 
     tagline {
         display: block;
@@ -571,38 +574,56 @@ big {
 
     .product {
         flex: 1 1 0;
-        min-width: min(100%, 360px);
+        min-width: min(calc(100vw - 2rem), 360px);
         border-radius: 0.28rem;
-        margin: 1em;
-        padding: 2em 1em;
+        margin: 1rem;
+        padding: 1rem 2rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        --max-img-height: min(30em, max(20em, calc(84vh - 20rem)));
 
         &.strava {
             background: #481006;
+            .image-compare {
+                width: fit-content;
+
+                > img:first-child {
+                    max-height: var(--max-img-height);
+                }
+            }
         }
         &.zwift {
             background: #260b4b;
 
             main > img {
+                max-height: var(--max-img-height);
+                display: block;
                 object-fit: contain;
-                max-width: 100%;
             }
         }
 
         header {
             text-align: center;
-            margin-bottom: 1em;
+            margin-bottom: 1rem;
         }
 
         main {
-            height: 30em;
-            display: flex;
             overflow: hidden;
 
-            .image-compare {
-                flex: 0 1 auto;
+            &:fullscreen {
+                --max-img-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            > * {
+                max-height: 100%;
+                max-width: 100%;
+                border-radius: 0.28em;
+                overflow: hidden;
             }
         }
     }
@@ -612,7 +633,7 @@ big {
     font-size: 1.1em;
     padding: 0em 0.4em;
     margin: 0;
-    max-width: 50em;
+    max-width: min(100%, 50em);
     line-height: 1.5;
 
     hr {
@@ -712,6 +733,10 @@ body > footer .install-link img {
     width: 10rem;
 }
 
+.other-points {
+    word-break: break-word;
+}
+
 
 @media only screen and (max-width: 700px) {
     body > #nav {
@@ -721,6 +746,10 @@ body > footer .install-link img {
     #nav nav .left > a:not(.logo) {
         display: none;
     }
+    #nav nav .left,
+    #nav nav .right {
+        height: 3.4rem !important;
+    }
 
     section card {
         padding: 1rem 0.5rem;
@@ -728,6 +757,10 @@ body > footer .install-link img {
 
     h3 {
         font-size: 1em;
+    }
+
+    #product-choices {
+        font-size: 0.7em;
     }
 
     bignote {
@@ -747,6 +780,20 @@ body > footer .install-link img {
         }
     }
 
+    .history-text {
+        font-size: 1em;
+    }
+
+    ul, ol {
+        padding-inline-start: 0.68em;
+    }
+
+    .other-points {
+        big {
+            font-size: 1.6em;
+        }
+    }
+
     card.intro-video {
         max-width: 100%;
     }
@@ -756,17 +803,19 @@ body > footer .install-link img {
         margin-right: 0 !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
-        align-items: center;
+        max-width: 100%;
 
         .product {
             margin-left: 0 !important;
             margin-right: 0 !important;
-            padding: 0.4rem !important;
+            padding-left: 0.4rem !important;
+            padding-right: 0.4rem !important;
         }
 
-        p {
+        p, .p {
+            font-size: 1em !important;
             max-width: initial;
-            padding: 0 1rem;
+            padding: 0 0.5rem;
         }
     }
 

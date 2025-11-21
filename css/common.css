@@ -17,10 +17,10 @@
 
 @keyframes shift-note {
     0% {
-        translate: 0 -40%;
+        translate: 0 var(--shift-start);
     }
     100% {
-        translate: 0 80%;
+        translate: 0 var(--shift-end);
     }
 }
 
@@ -316,11 +316,9 @@ bignote {
     border-radius: 0.4rem;
     background-color: #bf0505db;
     box-shadow: 1px 1px 5px 0 #0006;
-    animation: shift-note;
-    animation-range: 0% 180%;
-    animation-fill-mode: both;
-    animation-timeline: --section-reveal-timeline;
     right: calc(-1 * var(--bignote-pad, 0rem));
+    --shift-start: -40%;
+    --shift-end: 100%;
 
     &.left {
         left: calc(-1 * var(--bignote-pad, 0rem));
@@ -338,18 +336,17 @@ bignote {
     }
 
     &.middle {
+        --shift-start: -80%;
+        --shift-end: 60%;
         top: auto;
         bottom: initial;
     }
 
     &.bottom {
+        --shift-start: -100%;
+        --shift-end: 40%;
         top: initial;
         bottom: 3rem;
-    }
-
-    &.static {
-        position: static;
-        animation: none;
     }
 
     &.features {
@@ -406,6 +403,17 @@ bignote {
 
     .caption {
         margin-bottom: 0;
+    }
+}
+
+@supports (animation-timeline: --foo) {
+    bignote {
+        translate: 0 var(--shift-start);
+        animation-name: shift-note;
+        animation-range: 0% 180%;
+        animation-fill-mode: both;
+        animation-timeline: none;
+        animation-timeline: --section-reveal-timeline;
     }
 }
 

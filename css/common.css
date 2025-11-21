@@ -9,8 +9,9 @@
 
 @keyframes move-slider {
     from {--split: 0.5;}
-    33% {--split: 1;}
-    66% {--split: 0;}
+    25% {--split: 1;}
+    50% {--split: 0.5;}
+    75% {--split: 0;}
     to {--split: 0.5;}
 }
 
@@ -39,6 +40,7 @@ html {
 html {
     font-size: 14px;
     font-family: Lato, sans-serif;
+    scrollbar-width: thin;
 }
 
 html:not(.edge-browser) .edge-only {
@@ -202,11 +204,11 @@ a.store-install {
     0% {
         opacity: 0;
     }
-    40% {
+    30% {
         opacity: 0;
     }
     50% {
-        opacity: 0.8;
+        opacity: 1;
     }
     60% {
         opacity: 0;
@@ -222,12 +224,12 @@ a.store-install {
         position: fixed;
         z-index: -1;
         pointer-events: none;
-        left: calc(50% - 0.5em);
+        left: calc(50% - 0.615em);
         bottom: 1em;
         font-size: 1.5rem;
         font-weight: 500;
         letter-spacing: -0.84em;
-        padding: 0 0 0.88em 0;
+        padding: 0 0.017em 0.88em 0;
         --carnival-color-dim: #05550512;
         --carnival-color-bright: #96ff00;
         --shadow-color: #1e14;
@@ -246,7 +248,8 @@ a.store-install {
                                           var(--carnival-color-bright) var(--carnival-pos-2),
                                           var(--carnival-color-dim) var(--carnival-pos-3));
         background-clip: text;
-        animation: carnival-arrow 3s infinite linear, reveal-vis;
+        /* 18steps / 3s * 2keyframes = 12fps */
+        animation: carnival-arrow 3s infinite steps(18), reveal-vis 1ms;
         animation-timeline: auto, --section-reveal-timeline;
     }
 }
@@ -463,7 +466,8 @@ big {
 }
 
 .product:not(:hover) .image-compare { 
-    animation: move-slider 10s infinite;
+    /* 60steps / 10s * 5keyframes = 30fps */
+    animation: move-slider 10s infinite steps(60);
 }
 
 .image-compare {

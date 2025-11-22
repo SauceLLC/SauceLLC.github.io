@@ -218,4 +218,40 @@
         "Fixed erroneous \"Multiple logins detected\" messages",
         "Added Mods store: <a href=\"https://mods.sauce.llc\" external target=\"_blank\">https://mods.sauce.llc</a>"
     ]
+}, {
+    "version": "2.0.0",
+    "ts": 1763792166273,
+    "notes": [
+        "Added Hotkeys support",
+        "Added new themes - Red Sun and Blue Moon",
+        {
+            "html": "Added new fields",
+            "children": [
+                "Pack time - time spent sitting, working and solo",
+                "Coffee Time - time spent in coffee break",
+                "Made more fields available to Grid window"
+            ]
+        },
+        {
+            "html": "Improved Analysis window",
+            "children": [
+                "Show events data",
+                "Segment results are filtered by event and lap",
+                "Show time in pack, solo, working",
+                "Replaced charting library with higher performance <a href=\"https://github.com/SauceLLC/saucecharts\">Sauce Charts</a>"
+            ]
+        },
+        {
+            "html": "Improved Route handling",
+            "children": [
+                "Route progress is more accurate, including distance to finish",
+                "Pin placement is improved for multi-lap events",
+                "Lead-in is visually distinct on Map window",
+                "Routes with gaps between their end and start are handled more accurately"
+            ]
+        },
+        "Improved gap measurement",
+        "Improved performance of Groups window",
+        "Improved performance of backend data collection and processing"
+    }
 }]

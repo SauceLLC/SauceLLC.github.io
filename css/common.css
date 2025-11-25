@@ -30,6 +30,11 @@
     100% {scale: 1;}
 }
 
+:root {
+    --zwift-color: #142a78;
+    --strava-color: #7b1503;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -73,7 +78,7 @@ tm {
         font-size: 0.4em;
     }
     &[addspace]::after {
-        content: ' TM';
+        content: '\2002TM'; /* \u2002 = em space*/
     }
 }
 
@@ -349,6 +354,16 @@ bignote {
         bottom: 3rem;
     }
 
+    &.static {
+        translate: initial !important;
+        position: static;
+    }
+
+    &.wide {
+        min-width: 22rem;
+        max-width: 50rem;
+    }
+
     &.features {
         background-color: #3c16ceb8;
     }
@@ -365,8 +380,11 @@ bignote {
     }
 
     &.zwift {
-        background-color: #0043c8c4;
-        mix-blend-mode: plus-lighter;
+        background-color: hsl(from var(--zwift-color) h s calc(l + 20) / 0.8);
+    }
+
+    &.strava {
+        background-color: hsl(from var(--strava-color) h s calc(l + 20) / 0.8);
     }
 
     &.patron {
@@ -407,7 +425,7 @@ bignote {
 }
 
 @supports (animation-timeline: --foo) {
-    bignote {
+    bignote:not(.static) {
         translate: 0 var(--shift-start);
         animation-name: shift-note;
         animation-range: 0% 180%;
@@ -568,6 +586,16 @@ big {
     }
 }
 
+@container product-width (width > 440px) {
+    huge {
+        --huge-size: 3.4em;
+    }
+}
+@container product-width (width < 360px) {
+    huge {
+        --huge-size: 2.4em;
+    }
+}
 
 #product-choices {
     display: flex;
@@ -585,19 +613,47 @@ big {
     }
 
     .product {
+        container: product-width / inline-size;
         flex: 1 1 0;
-        min-width: min(calc(100vw - 2rem), 360px);
+        min-width: min(calc(100vw - 2rem), 420px);
         border-radius: 0.28rem;
         margin: 1rem;
-        padding: 1rem 2rem 2rem;
+        padding: 0.2rem 2rem 1.6rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         --max-img-height: min(30em, max(20em, calc(84vh - 20rem)));
 
+        a:hover:has(huge) {
+            text-decoration-thickness: 0.2em;
+            text-decoration-color: #fff6;
+            text-decoration-skip-ink: none;
+        }
+
+        huge {
+            font-size: var(--huge-size, 2.8em);
+            background-image: linear-gradient(162deg, #fd9a50, #e1dfa5, #fff);
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(1px 3px 5px #0008);
+            white-space: nowrap;
+            margin-top: 0.4rem;
+            margin-bottom: 0.8rem;
+
+
+            &:first-letter {
+                font-size: 1.2em;
+            }
+
+            .reduced {
+                font-size: 0.9em;
+            }
+        }
+
         &.strava {
-            background: #481006;
+            background: var(--strava-color);
+
             .image-compare {
                 width: fit-content;
 
@@ -607,7 +663,7 @@ big {
             }
         }
         &.zwift {
-            background: #260b4b;
+            background: var(--zwift-color);
 
             main > img {
                 max-height: var(--max-img-height);
@@ -618,7 +674,7 @@ big {
 
         header {
             text-align: center;
-            margin-bottom: 1rem;
+            margin-bottom: 0.6rem;
         }
 
         main {
@@ -750,7 +806,7 @@ body > footer .install-link img {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 640px) {
     body > #nav {
         margin-bottom: 0;
     }
@@ -772,7 +828,6 @@ body > footer .install-link img {
     }
 
     #product-choices {
-        font-size: 0.7em;
     }
 
     bignote {

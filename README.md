@@ -1,3 +1,3 @@
-![Sauce](/sauce4strava/images/logo_horiz_320x120.png)
+![Sauce](/images/logo_horiz_320x120.webp)
 
 Public website

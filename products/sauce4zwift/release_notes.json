@@ -254,4 +254,19 @@
         "Improved performance of Groups window",
         "Improved performance of backend data collection and processing"
     ]
+}, {
+    "version": "2.1.0",
+    "ts": 1769824660656,
+    "notes": [
+        "Added dirt/gravel road styling to Map window",
+        "Added segment display to Map window",
+        {
+            "html": "Added Window Lock Positions feature",
+            "children": [
+                "From Settings -> Windows you can enable locked window positions",
+                "Save and Restore actions are available in the UI, as Hotkey actions and from the API"
+            ]
+        },
+        "Added DNF and DNS entries to Event results"
+    ]
 }]

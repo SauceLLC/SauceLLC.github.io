@@ -271,38 +271,27 @@
     ]
 }, {
     "version": "2.2.0",
-    "ts": 1773260532802,
+    "ts": 1773347259313,
     "notes": [
-       {
-            "html": "Added Segment data fields",
-            "children": [
-                "Upcoming Segment: Meters to next segment",
-                "Active Segment: Meters remaining in current segment",
-                "Completed Segment: Time and power of most recently finished segment",
-                "Segment (Auto): Rotate between Upcoming, Active and Completed based on proximity"
-            ]
-        }, {
+        "Added Segment data fields for upcoming, active and finished segment information",
+        {
             "html": "Enhanced Segments window",
             "children": [
-                "Added Segment-Auto field to top of window",
-                "Added \"Auto\" option to segment drop down list.  Results will follow the Segment-Auto field",
-                "Added Nearby Segments to the segment drop down list",
-                "Sort segment drop down list alphanumerically",
-                "Auto scroll to most recent self-result",
-                "Added visual highlight of self-results"
+                "Added nearest Segment information to top of window",
+                "Added Auto and Nearby Segments to the Results drop down options",
+                "Automatically scroll to most recent self-result when results are updated"
             ]
         }, {
             "html": "Enhanced Map window",
             "children": [
                 "Always show PowerUp arches, regardless of segment overlap",
                 "Added map visuals for looping segments",
-                "Added segments and arches to Elevation chart in non-route mode"
+                "Added Segments and Arches to Elevation chart when in non-route mode"
             ]
         },
-        "Changed \"Event/Route Finish\" field to count down before event",
-        "Changed distance based fields to show 2 decimal places when over 1000m and less than 2k",
         "Added \"Remove Follower\" option to Profile window",
-        "Changed Settings -> Windows -> Profiles to be sorted by recency",
+        "Changed \"Event/Route Finish\" field to count down before an event start",
+        "Changed distance based fields to show 2 decimal places when over 1000m and less than 2k",
         "Fixed Overview (top bar) window's compatibility with the Show/Hide Windows hotkey",
         "Fixed transparency option for Map window when on a Portal climb"
     ]

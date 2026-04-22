@@ -295,4 +295,10 @@
         "Fixed Overview (top bar) window's compatibility with the Show/Hide Windows hotkey",
         "Fixed transparency option for Map window when on a Portal climb"
     ]
+}, {
+    "version": "2.2.2",
+    "ts": 1776887661841,
+    "notes": [
+        "Updated game data (routes, roads, etc.)"
+    ]
 }]

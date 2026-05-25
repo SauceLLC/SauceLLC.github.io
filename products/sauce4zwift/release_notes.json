@@ -308,7 +308,7 @@
         {
             "html": "Game Connection required changes...",
             "children": [
-                "Added Athlete -> PowerUp field",
+                "Added PowerUp field",
                 "Added PowerUp indicator to Game Control window",
                 "Added API support for setting specific camera angles",
                 "Added reception of direct-messages to Chat",

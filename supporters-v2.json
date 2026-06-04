@@ -40,13 +40,15 @@
     {
         "legend": true,
         "name": "Lanterne Rouge",
+        "quip": "YouTuber extraordinaire",
         "url": "https://www.youtube.com/channel/UC77UtoyivVHkpApL0wGfH5w"
     },
     {"legend": true, "name": "David Kostohryz, Jr."},
     {"legend": true, "name": "Alfred Zhong"},
     {
         "legend": true,
-        "name": "Alacrity Endurance",
+        "name": "Saturday | Ride & Run Faster",
+        "quip": "Michelle can ride circles around Alex, and Chuck Norris",
         "url": "https://www.youtube.com/channel/UC2Xe4xhaXBF2IUE1tAdtwjg"
     },
     {"id": "88fa80ae95bd", "name": "Justin Kaplan", "nameLock": true},
@@ -54,7 +56,12 @@
     {"id": "86395e7feda7", "legend": true, "name": "Rupert Lewis"},
     {"id": "9a9e52ba65d0", "legend": true, "name": "Alien King"},
     {"legend": true, "name": "Benny Prijono"},
-    {"legend": true, "name": "Antoncycling", "url": "https://www.antoncycling.be/"},
+    {
+        "legend": true,
+        "name": "Antoncycling",
+        "quip": "Cyclist, Coach and all-around good guy",
+        "url": "https://www.antoncycling.be/"
+    },
     {"id": "20105d18bdb2", "legend": true, "name": "Jeremy Aber"},
     {"id": "08c782e18db8", "legend": true, "name": "James Mangold"},
     {"id": "46925dbe8ccc", "legend": true, "name": "Craig Upton"},
@@ -64,7 +71,8 @@
         "id": "8063af8618d9",
         "legend": true,
         "name": "Geoffrey Baldet",
-        "url": "https://www.breakingsub10.im/en/home/"
+        "quip": "Finished an Ironman in less than 10 hours",
+        "url": "https://www.youtube.com/watch?v=eh7S8KXG4rI"
     },
     {"id": "caabf5205008", "legend": true, "name": "Brad Walden"},
     {"legend": true, "name": "Mike Mansell"},
@@ -75,7 +83,12 @@
         "url": "https://www.twitch.tv/teamitalylive"
     },
     {"id": "5cdb089e2241", "legend": true, "name": "Chris"},
-    {"legend": true, "name": "whySKIPdodis", "url": "https://www.twitch.tv/whyskipdodis"},
+    {
+        "legend": true,
+        "name": "whySKIPdodis",
+        "quip": "Husband, Father, and all the things for biking",
+        "url": "https://www.twitch.tv/whyskipdodis"
+    },
     {"id": "24ec413bf098", "legend": true, "name": "Andrew Cawood"},
     {"legend": true, "name": "Jordan Foster"},
     {"id": "b24411110ab7", "legend": true, "name": "James"},
@@ -83,9 +96,10 @@
     {"id": "d53e33e4d921", "legend": true, "name": "summertimevibes"},
     {"legend": true, "name": "Serkit"},
     {
-        "id": "a1dab6495b53",
+        "id": "bb4404dc3ebb",
         "legend": true,
         "name": "Linus Rask",
+        "quip": "Created Linux 2 weeks prior to Torvalds",
         "url": "https://www.instagram.com/rask204/"
     },
     {"id": "db03e8c140fc", "legend": true, "name": "Oliver Luff"},
@@ -99,12 +113,14 @@
         "id": "b34ec66a767c",
         "legend": true,
         "name": "George Haslett",
+        "quip": "Big into cycling, music, films, gaming and business",
         "url": "https://twitter.com/george"
     },
     {
         "id": "90e69cb71959",
         "legend": true,
         "name": "Brian Lucido",
+        "quip": "Developer of GOTOES utilities for Strava!",
         "url": "https://gotoes.org/strava"
     },
     {"id": "f07a232497a8", "name": "David W Kostohryz, Jr."},
@@ -119,7 +135,13 @@
     {"id": "3db344a43658", "name": "Jack Polley"},
     {"id": "03d104fe0f7c", "name": "Steven Richards"},
     {"id": "bd9ff6ae57f6", "name": "Mitch Jacobson"},
-    {"id": "8b1e7aa5f2d0", "name": "Eric Schlange"},
+    {
+        "id": "8b1e7aa5f2d0",
+        "legend": true,
+        "name": "Eric Schlange",
+        "quip": "The Zwift Insider",
+        "url": "https://zwiftinsider.com"
+    },
     {"id": "9584043e9db7", "name": "Jake Simons"},
     {"id": "779e3d5236d1", "name": "Matthew Houlberg"},
     {"id": "0e771f9a6cfb", "name": "Ben Morgan"},
@@ -144,7 +166,6 @@
     {"id": "794354f31898", "name": "Pat Murray"},
     {"id": "8c742d9aa0a4", "name": "Ben Soder"},
     {"id": "a491fee8e272", "name": "Desoutter Adrien"},
-    {"id": "bb4404dc3ebb", "name": "linus rask"},
     {"id": "24992b3d2de2", "name": "Mike Pridemore"},
     {"id": "6c8d30455177", "name": "Matthew Phillips"},
     {"id": "e2080209a1dd", "name": "Jason Drummond"},
@@ -177,7 +198,12 @@
     {"id": "12a2eccfa84f", "name": "Armando Monegro"},
     {"id": "58d76587d02e", "name": "Super Uper Spidey"},
     {"id": "b1b7ebe60943", "name": "Amber Gest"},
-    {"legend": true, "name": "@LindeEcykling", "url": "https://www.twitch.tv/lindeecykling"},
+    {
+        "legend": true,
+        "name": "@LindeEcykling",
+        "quip": "Follow Martin Zwifting with extra Sauce on Twitch",
+        "url": "https://www.twitch.tv/lindeecykling"
+    },
     {"legend": true, "name": "Edelhelfer", "url": "https://www.youtube.com/@EdelhelferZRG"},
     {"id": "94dfa4146d92", "name": "Justin"},
     {"id": "f7b7bcdeac95", "name": "Mike B"},
@@ -232,7 +258,7 @@
         "id": "ac6e612d5ca3",
         "name": "Crank Green Watts",
         "nameLock": true,
-        "url": "https://crankgreenwatts.me"
+        "url": "https://www.youtube.com/@crankgreenwatts"
     },
     {"id": "659eab683861", "name": "Heath Fellows"},
     {"id": "c509ed191770", "name": "Dan Ford"},

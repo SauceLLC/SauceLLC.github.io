@@ -316,4 +316,10 @@
             ]
         }
     ]
+}, {
+    "version": "2.3.1",
+    "ts": 1783461675381,
+    "notes": [
+        "Updated game data for Paris Expansion"
+    ]
 }]

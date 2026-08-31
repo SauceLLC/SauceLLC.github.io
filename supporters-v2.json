@@ -285,7 +285,7 @@
     {"id": "c0b8e5b09db5", "name": "Dominik"},
     {"id": "065f3a644226", "name": "Courtney Coppinger"},
     {"id": "0289f8ba186c", "name": "Alexander Keller"},
-    {"id": "2b9afe993039", "name": "Thorsten Brandt", quip: "Will ride for cake"},
+    {"id": "2b9afe993039", "name": "Thorsten Brandt", "quip": "Will ride for cake"},
     {"id": "22c05ce28769", "name": "suleiman ali"},
     {"id": "f064f1e682b0", "name": "Micah Amman"},
     {"id": "325e939caf7b", "name": "Max Baker"},

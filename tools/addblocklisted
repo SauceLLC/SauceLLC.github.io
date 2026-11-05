@@ -7,12 +7,18 @@ import shellish
 
 
 @shellish.autocommand
-def addblocklisted(zwift_id, dryrun=False):
+def addblocklisted(zwift_id_or_hash, dryrun=False):
     project_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
     fname = os.path.join(project_root, 'products/sauce4zwift/exclusions.json')
     with open(fname) as f:
         blocklist = json.load(f)
-    idhash = hashlib.sha256(zwift_id.encode()).hexdigest()
+    if len(zwift_id_or_hash) != 64:
+        zid = int(zwift_id_or_hash)
+        if str(zid) != zwift_id_or_hash:
+            raise Exception("Invalid Number Value")
+        idhash = hashlib.sha256(str(zid).encode()).hexdigest()
+    else:
+        idhash = zwift_id_or_hash
     blocklist.append({"idhash": idhash})
     if not dryrun:
         with open(fname, 'w') as f:

@@ -379,4 +379,15 @@
         "Bug fixes and improvements for Sauce Performance multi-device settings sync",
         "Fix (data) streams and segments caching regression (upstream change)"
     ]
+}, {
+    "version": "8.11.0",
+    "ts": 1794541718557,
+    "notes": [
+        "Add Peak Power Curve chart to Sauce Performance",
+        "Add/fix support for activity filters with Strava Nov 2026 changes",
+        "Fix weight/ftp values on activities older than whats available in the historical metadata",
+        "Fix incorrect timezone for Segment -> My History",
+        "Fix tTSS calculation for female athletes",
+        "Fix Sauce global menu entry additions for Strava \"Modern\" pages"
+    ]
 }]
